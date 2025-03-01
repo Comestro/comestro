@@ -17,8 +17,8 @@
       <!-- font-awesome css -->
       <link rel="stylesheet" href="{{asset('assets/vendor/font-awesome/css/all.min.css?v=1.0.0')}}">
       
-      <link href="../../css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-      <link href="../../css2-1?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">  </head>
+      {{-- <link href="../../css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link href="../../css2-1?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">  </head> --}}
   <body class="  ">
     <!-- loader Start -->
     <div id="loading">
@@ -31,7 +31,7 @@
       <div class="iq-sidebar  sidebar-default  ">
           <div class="iq-sidebar-logo d-flex align-items-end justify-content-between">
               <a href="index.html" class="header-logo">
-                  <img src="{{ asset('assets/images/logo.png')}}" class="img-fluid rounded-normal " alt="logo">
+                  {{-- <img src="{{ asset('assets/images/logo.png')}}" class="img-fluid rounded-normal " alt="logo"> --}}
                   <span>Datum</span>
               </a>
               <div class="side-menu-bt-sidebar-1">

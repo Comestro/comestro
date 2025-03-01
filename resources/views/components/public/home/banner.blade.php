@@ -1,3 +1,36 @@
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        /* background: linear-gradient(135deg, #ff9a9e, #fad0c4); */
+        background: linear-gradient(135deg, #2e2926, #2e2911);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+</style>
 
 <div>
     <div class="banner">
