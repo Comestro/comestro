@@ -1,4 +1,4 @@
-<div class="relative bg-[#0D3C4B] py-20 text-white overflow-hidden">
+<div class="relative bg-[#0D3C4B] py-20 md:py-20 text-white overflow-hidden">
     <!-- Background Animated Dots -->
     <div class="absolute inset-0 pointer-events-none">
         <div class="absolute w-40 h-40 bg-dot-pattern animate-dots top-10 left-10 opacity-50"></div>
@@ -7,35 +7,31 @@
     </div>
 
     <!-- Testimonial Content -->
-    <div class="relative z-10 max-w-4xl mx-auto text-center">
-        <div class="text-5xl text-red-500">“ Our achievements “</div>
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-4">
+        <div class="text-3xl text-red-500 md:text-5xl">“ Our achievements “</div>
         <p class="text-lg mt-4">
-            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus.
-        </p>
-
-
-
-        
+            We’ve empowered businesses with innovative solutions, delivering exceptional results that drive success. Our commitment to excellence shines through every project we undertake.
+        </p>  
     </div>
 
     <!-- Statistics Section -->
-    <div class="grid grid-cols-4 gap-6 mt-12 px-6 max-w-6xl mx-auto -mt-12">
-        <div class="bg-white text-black p-6 rounded-lg text-center shadow-md">
-            <h2 class="text-4xl font-bold">8705</h2>
-            <p class="text-gray-600">Projects Completed</p>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4  md:gap-2 mt-12 px-4 sm:px-6 max-w-6xl mx-auto">
+        <div class="bg-white text-black p-4 text-center w-full sm:w-60 h-40 flex flex-col justify-center">
+            <h2 class="text-3xl sm:text-4xl font-bold">8705</h2>
+            <p class="text-gray-600 mt-2">Projects Completed</p>
         </div>
-        <div class="bg-red-500 text-white p-6 rounded-lg text-center shadow-md">
+        <div class="bg-red-500 text-white p-4 sm:p-6 text-center w-full sm:w-60 h-40 flex flex-col justify-center">
             <h2 class="text-4xl font-bold">480</h2>
-            <p>Active Clients</p>
+            <p class="mt-2">Active Clients</p>
         </div>
-        <div class="bg-white text-black p-6 rounded-lg text-center shadow-md">
+        <div class="bg-white text-black p-4 text-center w-full sm:w-60 h-40 flex flex-col justify-center">
             <h2 class="text-4xl font-bold">626</h2>
-            <p class="text-gray-600">Cups of Coffee</p>
+            <p class="text-gray-600 mt-2">Cups of Coffee</p>
         </div>
-        <div class="bg-white text-black p-6 rounded-lg text-center shadow-md">
+        <div class="bg-white text-black p-4 text-center w-full sm:w-60 h-40 flex flex-col justify-center">
             <h2 class="text-4xl font-bold">9774</h2>
-            <p class="text-gray-600">Happy Clients</p>
+            <p class="text-gray-600 mt-2">Happy Clients</p>
         </div>
     </div>
 </div>
