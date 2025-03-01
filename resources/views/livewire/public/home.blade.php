@@ -4,7 +4,6 @@
   <x-public.home.our-project/>
 
   <x-public.home.achievements/>
-  <x-public.home.recentblog/>
 
   <section class="py-16 bg-gray-100 text-center">
     <h3 class="text-gray-400 uppercase tracking-widest text-sm mt-2">Customer Says</h3>
@@ -34,5 +33,6 @@
         />
     </div>
 </section>
+<x-public.home.recentblog/>
 
 </div>
