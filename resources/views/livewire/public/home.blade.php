@@ -1,4 +1,6 @@
 <div>
+    <x-header/>
+
     <x-public.home.banner/>
   <x-public.home.services/>
   <x-public.home.our-project/>
@@ -33,5 +35,5 @@
         />
     </div>
 </section>
-
+<x-footer/>
 </div>
