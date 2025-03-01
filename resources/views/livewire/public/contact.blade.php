@@ -1,7 +1,7 @@
 
 <div >
    
-
+<x-header/>
 <div class="bg-gray-900 font-sans text-white">
 
     <div id="particles-js" class="absolute inset-0 z-0"></div>
@@ -61,7 +61,7 @@
     </div>
     </div>
 
-  
+  <x-footer/>
 
    
     <script>
