@@ -1,0 +1,74 @@
+#d0cce0 = blue
+
+#2e2926
+////////////////////////////////////////////////////////
+<header 
+x-data="{ scrolled: false, open: false }" 
+x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 50 })"
+:class="scrolled ? 'w-[90%] left-1/2 transform -translate-x-1/2 rounded-full  shadow-lg' : 'w-full'"
+class="fixed top-0 left-0 bg-white py-4 px-6 transition-all duration-300 z-50"
+>
+////////////////////////////////////////////////////////////
+
+<more tringle >
+
+particlesJS("particles-js", {
+    "particles": {
+        "number": {
+            "value": 100,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+        },
+        "color": {
+            "value": "#ffffff"
+        },
+        "shape": {
+            "type": "triangle",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            }
+        },
+        "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+                "enable": false
+            }
+        },
+        "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+                "enable": false
+            }
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+        },
+        "move": {
+            "enable": true,
+            "speed": 2,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false
+        }
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": { "enable": false },  // 👈 Hover Effect Disabled
+            "onclick": { "enable": false }   // 👈 Click Effect Disabled
+        }
+    }
+});
+<>
+<> 
