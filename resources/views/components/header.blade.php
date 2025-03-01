@@ -14,7 +14,7 @@
             
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex space-x-6">
-                <a href="#" class="text-blue-500 font-medium">Home</a>
+                <a href="{{route('home')}}" class="text-blue-500 font-medium">Home</a>
                 <a href="#" class="text-gray-700 hover:text-blue-500">About Us</a>
                 <a href="#" class="text-gray-700 hover:text-blue-500">Portfolio</a>
                 <a href="{{route('service')}}" class="text-gray-700 hover:text-blue-500">Services</a>
