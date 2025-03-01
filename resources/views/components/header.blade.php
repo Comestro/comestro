@@ -17,10 +17,10 @@
                 <a href="#" class="text-blue-500 font-medium">Home</a>
                 <a href="#" class="text-gray-700 hover:text-blue-500">About Us</a>
                 <a href="#" class="text-gray-700 hover:text-blue-500">Portfolio</a>
-                <a href="#" class="text-gray-700 hover:text-blue-500">Services</a>
+                <a href="{{route('service')}}" class="text-gray-700 hover:text-blue-500">Services</a>
                 <a href="#" class="text-gray-700 hover:text-blue-500">Testimonials</a>
                 <a href="#" class="text-gray-700 hover:text-blue-500">Blog</a>
-                <a href="#" class="text-gray-700 hover:text-blue-500">Contact</a>
+                <a href="{{route('contact')}}" class="text-gray-700 hover:text-blue-500">Contact</a>
             </nav>
 
             <!-- Mobile Menu Button -->
