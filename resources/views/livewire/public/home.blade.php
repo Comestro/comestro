@@ -35,5 +35,7 @@
         />
     </div>
 </section>
+<x-public.home.recentblog/>
 
+<x-footer/>
 </div>
