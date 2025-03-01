@@ -4,11 +4,7 @@
         <div class="banner">
             <div id="particles-js" class="absolute inset-0 z-0"></div>
             <div class="content">
-                <h1 class="text-4xl font-bold text-center text-gray-100 mt-2">Our Services</h1>
-                <p class="text-lg text-center text-gray-300 max-w-2xl mx-auto mt-3">
-                    At Comestro, we deliver innovative and tailored solutions to meet your business needs.
-                </p>
-                
+                <h1 class="text-5xl font-bold">We love to create <span class="text-white">Our</span> Services</h1>
              <div class="text-center mt-5">
                 <a href="{{route('contact')}}" class=" px-6 py-3 border border-white rounded-full text-white hover:bg-white hover:text-pink-500 font-700 transition inline-block">
                     Get in touch
