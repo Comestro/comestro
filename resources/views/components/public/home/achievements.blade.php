@@ -16,7 +16,7 @@
 </div>
 
 <!-- Statistics Section -->
- <div class="bg-white py-8 md:py-10 relative overflow-visible">
+ <div class="bg-gray-100 py-8 md:py-10 relative overflow-visible">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-4 sm:px-6 max-w-6xl mx-auto relative">
         <div class="bg-white text-black p-4 text-center w-full h-32 sm:h-36 lg:h-40 flex flex-col justify-center relative -mt-12 sm:-mt-20 lg:-mt-24 shadow-lg">
             <h2 class="text-xl sm:text-2xl lg:text-4xl font-bold">8705</h2>

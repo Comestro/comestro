@@ -10,7 +10,7 @@
             </div>
         </div>
     </div>
-   <div class="bg-gray-900 font-sans text-white">
+   <div class="bg-gray-100 font-sans text-white">
         <div class="relative z-10 min-h-screen">
             <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl px-4 z-20">
                 <div class="bg-[#0D3C4B] p-6 rounded-lg shadow-lg text-center">

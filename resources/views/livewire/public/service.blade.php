@@ -77,11 +77,11 @@
     
     </div>
     
-<div class="bg-gray-900 font-sans text-white">
+<div class="bg-gray-100 font-sans text-white">
     <section class="py-16 relative z-10">
         <div class="container mx-auto px-4">
-            <h1 class="text-3xl font-bold text-center text-gray-100">Exceptional Services, Tailored for You</h1>
-            <p class="text-lg text-center text-gray-300 mb-16 max-w-2xl mx-auto mt-2">
+            <h1 class="text-3xl font-bold text-center text-gray-900">Exceptional Services, Tailored for You</h1>
+            <p class="text-lg text-center text-gray-900 mb-16 max-w-2xl mx-auto mt-2">
                 At Comestro, we deliver innovative and tailored solutions to meet your business needs.
             </p>  
            
