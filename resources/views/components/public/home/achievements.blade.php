@@ -16,21 +16,22 @@
 
     <!-- Statistics Section -->
     
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4  md:gap-2 mt-12 px-4 sm:px-6 max-w-6xl mx-auto">
-        <div class="bg-white text-black p-4 text-center w-full sm:w-60 h-40 flex flex-col justify-center">
-            <h2 class="text-3xl sm:text-4xl font-bold">8705</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-12 px-4 sm:px-6 max-w-6xl mx-auto">
+        <div class="bg-white text-black p-4 text-center w-full h-40 flex flex-col justify-center">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">8705</h2>
             <p class="text-gray-600 mt-2">Projects Completed</p>
         </div>
-        <div class="bg-red-500 text-white p-4 sm:p-6 text-center w-full sm:w-60 h-40 flex flex-col justify-center">
-            <h2 class="text-4xl font-bold">480</h2>
+        <div class="bg-red-500 text-white p-4 text-center w-full h-40 flex flex-col justify-center">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">480</h2>
             <p class="mt-2">Active Clients</p>
         </div>
-        <div class="bg-white text-black p-4 text-center w-full sm:w-60 h-40 flex flex-col justify-center">
-            <h2 class="text-4xl font-bold">626</h2>
+        <div class="bg-white text-black p-4 text-center w-full h-40 flex flex-col justify-center">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">626</h2>
             <p class="text-gray-600 mt-2">Cups of Coffee</p>
         </div>
-        <div class="bg-white text-black p-4 text-center w-full sm:w-60 h-40 flex flex-col justify-center">
-            <h2 class="text-4xl font-bold">9774</h2>
+        <div class="bg-white text-black p-4 text-center w-full h-40 flex flex-col justify-center">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">9774</h2>
             <p class="text-gray-600 mt-2">Happy Clients</p>
         </div>
     </div>
