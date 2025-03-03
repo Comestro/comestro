@@ -13,3 +13,6 @@ Route::get('/',Home::class)->name('home');
 Route::get('/admin-dashboard',Dashboard::class)->name('admin-dashboard');
 Route::get('/contact',Contact::class)->name('contact');
 Route::get('/service',Service::class)->name('service');
+Route::get('/about',About::class)->name('about');
+Route::get('/blog',Blog::class)->name('blog');
+Route::get('/login',Login::class)->name('login');
