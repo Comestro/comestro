@@ -54,7 +54,6 @@
     animation: moveDots 5s infinite linear;
 }
 
-/* Ensure text doesn't overflow on small screens */
 p {
     word-wrap: break-word;
 }
