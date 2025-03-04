@@ -6,7 +6,9 @@
         <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Company Info -->
             <div>
-                <h2 class="text-2xl font-semibold">Comestro<span class="text-red-500">.</span></h2>
+                <h2 class="text-2xl font-semibold text-blue-500">
+                    <img src="{{ asset('home/comestro.png') }}"  class="inline-block h-8 mr-2">
+                  </h2>
                 <p class="text-gray-400 mt-2">Delivering projects at lightning speed with expert developers.</p>
                 <p class="text-red-500 text-2xl font-semibold mt-4"> (+91) 95-46-80-55-80</p>
                 <p class="text-gray-400">contact@comestro.com</p>
