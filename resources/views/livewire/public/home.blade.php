@@ -12,7 +12,7 @@
         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
     </p>
 
-    <div class=" mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 max-w-6xl mx-auto">
+    <div class=" mt-16 grid grid-cols-1 md:grid-cols-3 gap-6  max-w-6xl mx-auto">
         <x-public.home.our-customer 
             image="https://th.bing.com/th/id/OIP.BlNKdwMYFusC7Djw9mgwvQHaE8?rs=1&pid=ImgDetMain" 
             name="Dennis Green" 
