@@ -6,22 +6,6 @@
                     <div class="d-flex align-items-center justify-content-between">
                         <h4 class="fw-bold">Manage Settings</h4>
                     </div>
-                    <div class="create-workform">
-                        <div class="d-flex flex-wrap align-items-center justify-content-between">
-                            <div class="modal-product-search d-flex flex-wrap">
-                                <form class="me-3 position-relative">
-                                    <div class="form-group mb-0">
-                                        <input type="text" class="form-control" id="exampleInputText" placeholder="Search Settings">
-                                        <a class="search-link" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 @if (session()->has('message'))
@@ -31,10 +15,10 @@
                 @endif
 
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="card card-block card-stretch">
-                            <div class="card-body p-0">
-                                <div class="d-flex justify-content-between align-items-center p-3 pb-md-0">
+                     <div class="col-lg-12"> 
+                     <div class="card card-block card-stretch">
+                            <div class="card-body p-0"> 
+                                 <div class="d-flex justify-content-between align-items-center p-3 pb-md-0">
                                     <h5 class="fw-bold">Settings List</h5>
                                     <button class="btn btn-secondary btn-sm">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="me-1" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -42,7 +26,7 @@
                                         </svg>
                                         Export
                                     </button>
-                                </div>
+                                </div> 
                                 <div class="table-responsive iq-product-table">
                                     <table class="table data-table mb-0">
                                         <thead class="table-color-heading">
