@@ -24,18 +24,26 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 ">
                     <div class="bg-[#0D3C4B] p-6 rounded-lg shadow-lg">
                         <h3 class="text-2xl font-semibold mb-6">Send Us a Message</h3>
-                        <form class="space-y-4">
+                        @if (session()->has('message'))
+                            <div class="mb-4 p-3 bg-green-500 text-white rounded-lg">
+                                {{ session('message') }}
+                            </div>
+                        @endif
+                        <form wire:submit.prevent="submit"class="space-y-4">
                             <div>
                                 <label for="name" class="block text-gray-300 mb-2">Name</label>
-                                <input type="text" id="name" class="w-full p-3 bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500 text-white" placeholder="Your Name">
+                                <input wire:model="name" type="text" id="name" class="w-full p-3 bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500 text-white" placeholder="Your Name">
+                                @error('name') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
                             </div>
                             <div>
                                 <label for="email" class="block text-gray-300 mb-2">Email</label>
-                                <input type="email" id="email" class="w-full p-3 bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500 text-white" placeholder="Your Email">
+                                <input wire:model="email" type="email" id="email" class="w-full p-3 bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500 text-white" placeholder="Your Email">
+                                @error('email') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
                             </div>
                             <div>
                                 <label for="message" class="block text-gray-300 mb-2">Message</label>
-                                <textarea id="message" rows="4" class="w-full p-3 bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500 text-white" placeholder="Your Message"></textarea>
+                                <textarea wire:model="message" id="message" rows="4" class="w-full p-3 bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500 text-white" placeholder="Your Message"></textarea>
+                                @error('message') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
                             </div>
                             <button type="submit" class="mt-4 px-6 py-3 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition">Send Message</button>
                         </form>

@@ -3,6 +3,7 @@
 use App\Livewire\Admin\Account\ManageAccount;
 use App\Livewire\Admin\AddLead;
 use App\Livewire\Admin\Contact\ManageContact;
+use App\Livewire\Admin\Setting\ManageSetting;
 use App\Livewire\Admin\Dashboard;
 use App\Livewire\Admin\Deal\ManageDeal;
 use App\Livewire\Admin\Lead\ConvertLead;
@@ -57,6 +58,8 @@ Route::middleware(['middleware' => 'auth'])->group(function(){
        
 
     });
+   
+  Route::get('/admin/settings', ManageSetting::class)->name('admin.settings');
 });
 // Route::get('/admin-dashboard',Dashboard::class)->name('admin-dashboard');
 
