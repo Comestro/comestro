@@ -6,7 +6,7 @@
             <div class="col-lg-12">
                 <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 my-schedule mb-4">
                     <div class="d-flex align-items-center justify-content-between">
-                        <h4 class="fw-bold">Lead</h4>
+                        <h4 class="fw-bold">Account</h4>
                     </div>
                     <div class="create-workform">
                         <div class="d-flex flex-wrap align-items-center justify-content-between">
@@ -21,11 +21,11 @@
                                         </a>
                                     </div>
                                 </form>
-                                <a href="{{route('add_lead')}}" class="btn btn-primary position-relative d-flex align-items-center justify-content-between">
+                                <a href="" class="btn btn-primary position-relative d-flex align-items-center justify-content-between">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="20" fill="none" viewbox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                                     </svg>
-                                    Add Lead
+                                    Add Account
                                 </a>
                             </div>
                         </div>
@@ -37,7 +37,7 @@
                         <div class="card card-block card-stretch">
                             <div class="card-body p-0">
                                 <div class="d-flex justify-content-between align-items-center p-3 pb-md-0">
-                                    <h5 class="fw-bold">Leads List</h5>
+                                    <h5 class="fw-bold">Accounts List</h5>
                                     <button class="btn btn-secondary btn-sm">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="me-1" width="20" fill="none" viewbox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
@@ -49,31 +49,23 @@
                                     <table class="table data-table mb-0">
                                         <thead class="table-color-heading">
                                             <tr class="text-light">
-                                                <th ><label class="text-muted m-0">First Name</label></th>
-                                                <th ><label class="text-muted m-0">Last Name</label></th>
-                                                <th ><label class="text-muted m-0">Title</label></th>
-                                                <th ><label class="text-muted m-0">Email</label></th>
-                                                <th ><label class="text-muted m-0">Company</label></th>
-                                                <th ><label class="text-muted m-0">Phone</label></th>
-                                                <th ><label class="text-muted m-0">Lead Status</label></th>
-                                                <th ><label class="text-muted m-0">Lead Source</label></th>
-                                                <th ><label class="text-muted m-0">Actions</label></th>
+                                                <th><label class="text-muted m-0">First Name</label></th>
+                                                <th><label class="text-muted m-0">Phone</label></th>
+                                                <th><label class="text-muted m-0">Website</label></th>
+                                                <th><label class="text-muted m-0">Actions</label></th>
                                             </tr>
                                         </thead>
+                                        
                                         <tbody>
-                                            @foreach ($leads as $lead)
+                                            @foreach ($accounts as $account)
                                             <tr>
-                                                <td>{{ $lead->first_name }}</td>
-                                                <td>{{ $lead->last_name }}</td>
-                                                <td>{{ $lead->title }}</td>
-                                                <td>{{ $lead->email }}</td>
-                                                <td>{{ $lead->company }}</td>
-                                                <td>{{ $lead->phone }}</td>
-                                                <td>{{ $lead->lead_status }}</td>
-                                                <td>{{ $lead->lead_source }}</td>
+                                                <td>{{$account->account_name}}</td>
+                                                <td>{{$account->phone}}</td>
+                                                <td>{{$account->website}}</td>
+                                               
                                                 <td>
                                                     <div class="d-flex align-items-center">
-                                                        <a href="{{ route('admin.lead.view', $lead->id) }}" class="text-info me-3" title="View">
+                                                        <a href="" class="text-info me-3" title="View">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.5C7 4.5 2.5 9 2.5 12s4.5 7.5 9.5 7.5 9.5-4.5 9.5-7.5-4.5-7.5-9.5-7.5zM12 9a3 3 0 100 6 3 3 0 000-6z"></path>
                                                             </svg>

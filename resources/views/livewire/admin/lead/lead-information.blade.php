@@ -87,7 +87,9 @@
                                         <option value="Website">Website</option>
                                         <option value="Referral">Referral</option>
                                         <option value="Social Media">Social Media</option>
-                                        <option value="Advertisement">Advertisement</option>
+                                        <option value="Direct call">Direct call</option>
+                                        <option value="Search">Search</option>
+                                        <option value="Advertising">Advertising</option>
                                     </select>
                                     @error('lead_source') <span class="text-danger">{{ $message }}</span> @enderror
                                 </div>

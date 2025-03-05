@@ -1,7 +1,10 @@
 <?php
 
+use App\Livewire\Admin\Account\ManageAccount;
 use App\Livewire\Admin\AddLead;
+use App\Livewire\Admin\Contact\ManageContact;
 use App\Livewire\Admin\Dashboard;
+use App\Livewire\Admin\Deal\ManageDeal;
 use App\Livewire\Admin\Lead\ConvertLead;
 use App\Livewire\Admin\Lead\LeadInformation;
 use App\Livewire\Admin\Lead\LeadView;
@@ -34,6 +37,24 @@ Route::middleware(['middleware' => 'auth'])->group(function(){
         Route::get('/admin/leads/view/{id}', LeadView::class)->name('admin.lead.view');
         Route::get('/admin/leads/view/{id}', LeadView::class)->name('admin.lead.view');
         Route::get('/admin/convert-lead/{id}', ConvertLead::class)->name('admin.convert.lead');
+
+    });
+     Route::group(['prefix' => 'accounts'], function () {
+        // Route::get('/add-lead',LeadInformation::class)->name('add_lead');
+        Route::get('/manage-accounts',ManageAccount::class)->name('manage_accounts');
+       
+
+    });
+     Route::group(['prefix' => 'contacts'], function () {
+        // Route::get('/add-lead',LeadInformation::class)->name('add_lead');
+        Route::get('/manage-contacts',ManageContact::class)->name('manage_contacts');
+       
+
+    });  
+    Route::group(['prefix' => 'deals'], function () {
+        // Route::get('/add-lead',LeadInformation::class)->name('add_lead');
+        Route::get('/manage-deals',ManageDeal::class)->name('manage_deals');
+       
 
     });
 });
