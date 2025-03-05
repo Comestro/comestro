@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Admin\Account\AddAccount;
 use App\Livewire\Admin\Account\ManageAccount;
 use App\Livewire\Admin\AddLead;
 use App\Livewire\Admin\Contact\ManageContact;
@@ -41,7 +42,7 @@ Route::middleware(['middleware' => 'auth'])->group(function(){
 
     });
      Route::group(['prefix' => 'accounts'], function () {
-        // Route::get('/add-lead',LeadInformation::class)->name('add_lead');
+        Route::get('/add-accounts',AddAccount::class)->name('add_accounts');
         Route::get('/manage-accounts',ManageAccount::class)->name('manage_accounts');
        
 
