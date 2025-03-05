@@ -2,7 +2,7 @@
     <!-- Section Heading -->
      <div class="max-w-2xl mx-auto">
         <h3 class="text-sm uppercase tracking-widest text-gray-500 mt-2">Our Projects</h3>
-        <h2 class="text-3xl font-bold text-gray-900  text-gray-400 px-4 py-2 inline-block mt-2">
+        <h2 class="text-3xl font-bold text-gray-900  px-4 py-2 inline-block mt-2">
             View our works below to see our,<br>design and way of development.
         </h2>
         <p class="text-gray-500 mt-4">
@@ -25,7 +25,7 @@
                     A powerful e-commerce platform enabling multiple vendors to sell their products with seamless order management.
                 </p>
                 <a href="#" class="mt-4 inline-block px-4 py-2 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition">
-                    View Project
+                    View Project &rarr;
                 </a>
             </div>
         </div>
@@ -44,7 +44,7 @@
                     A complete solution for managing laborers, franchises, staff, and end clients efficiently.
                 </p>
                 <a href="#" class="mt-4 inline-block px-4 py-2 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition">
-                    View Project
+                    View Project &rarr;
                 </a>
             </div>
         </div>
@@ -64,7 +64,7 @@
                     A sleek platform designed for users to effortlessly capture, upload, and share website screenshots with built-in editing tools.
                 </p>
                 <a href="#" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full hover:bg-pink-600 hover:shadow-lg transition-all duration-300">
-                    View Project
+                    View Project &rarr;
                 </a>
             </div>
         </div>
