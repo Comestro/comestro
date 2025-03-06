@@ -16,6 +16,8 @@ class ManageSetting extends Component
     
     public $selectedSettingId;
     public $name, $email, $message;
+    public $showDeleteModal = false; 
+    public $setting_id;
 
     protected $rules = [
         'name' => 'required|string|max:255',
@@ -48,10 +50,16 @@ class ManageSetting extends Component
         session()->flash('message', 'Setting updated successfully!');
         $this->resetForm();
     }
-
+    public function confirmDelete($id)
+    {
+        $this->setting_id = $id;
+        $this->showDeleteModal = true;
+    }
     public function delete($id)
     {
         Setting::findOrFail($id)->delete();
+        $this->showDeleteModal = false;
+        $this->setting_id = null;
         session()->flash('message', 'Setting deleted successfully!');
     }
 
