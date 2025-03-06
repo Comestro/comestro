@@ -33,15 +33,15 @@ class ManageAccount extends Component
     {
         $this->validate([
             'account_name' => 'required|string|max:100',
-'phone' => 'required|string|max:15|unique:accounts,phone,'.$this->account_id,
+            'phone' => 'required|string|max:15|unique:accounts,phone,' . $this->account_id,
 
             'website' => 'nullable|url|max:100',
         ]);
         $account = Account::findOrFail($this->account_id);
         $account->update([
             'account_name' => $this->account_name,
-    'phone' => $this->phone,
-    'website' => $this->website,
+            'phone' => $this->phone,
+            'website' => $this->website,
         ]);
         session()->flash('message', 'account updated successfully!');
         $this->showEditModal = false;
@@ -52,7 +52,7 @@ class ManageAccount extends Component
         $this->account_id = $id;
         $this->showDeleteModal = true;
     }
-    public function deleteLead()
+    public function deleteAccount()
     {
         Account::destroy($this->account_id);
         session()->flash('message', 'Account deleted successfully!');
