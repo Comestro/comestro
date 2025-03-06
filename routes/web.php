@@ -12,6 +12,7 @@ use App\Livewire\Admin\Lead\LeadInformation;
 use App\Livewire\Admin\Lead\LeadView;
 use App\Livewire\Admin\Lead\ManageLead;
 use App\Livewire\Auth\Login;
+use App\Livewire\Auth\Logout;
 use App\Livewire\Public\Home;
 use App\Livewire\Public\Contact;
 use App\Livewire\Public\Portfolio;
@@ -28,10 +29,11 @@ Route::get('/about',About::class)->name('about');
 Route::get('/blog',Blog::class)->name('blog');
 Route::get('/portfolio',Portfolio::class)->name('portfolio');
 Route::get('/read-more',ReadMore::class)->name('read-more');
-Route::get('/login',Login::class)->name('login');
+Route::get('/admin-login',Login::class)->name('login');
 
 Route::middleware(['middleware' => 'auth'])->group(function(){
     Route::get('/admin-dashboard',Dashboard::class)->name('admin-dashboard');
+    Route::get('/logout',Logout::class)->name('logout');
 
     Route::group(['prefix' => 'leads'], function () {
         Route::get('/add-lead',LeadInformation::class)->name('add_lead');

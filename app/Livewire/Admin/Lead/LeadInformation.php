@@ -23,7 +23,7 @@ class LeadInformation extends Component
         'company' => 'nullable|string|max:255',
         'phone' => 'nullable|string|max:10',
         'lead_status' => 'required|in:New,Contacted,Qualified,Lost',
-        'lead_source' => 'nullable|in:Website,Referral,Social Media,Advertisement',
+        'lead_source' => 'nullable|in:Website,Referral,Direct call,Social Media,Search,Advertisement',
         'street' => 'nullable|string|max:255',
         'city' => 'nullable|string|max:255',
         'state' => 'nullable|string|max:255',

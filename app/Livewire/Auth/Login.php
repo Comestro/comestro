@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 
 class Login extends Component
 {
-    #[Layout('components.layouts.adminLayout')]
+    // #[Layout('components.layouts.adminLayout')]
 
 
     public $email;
