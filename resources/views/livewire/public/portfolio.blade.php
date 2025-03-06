@@ -76,7 +76,7 @@
 
 <div class="bg-gray-100">
     <div class=" py-12 text-center px-6 sm:px-8 lg:px-16">
-        <h2 class="text-4xl font-bold text-gray-900 mt-2">
+        <h2 class="text-4xl font-extrabold  mt-2 bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">
           A B O U T
         </h2>
        <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed max-w-4xl mx-auto font-light text-gray-700 mt-10">  Mastering Programming &  <span class=" bg-orange-100 text-orange-500 px-3 py-1 ">Web design </span> </h1>
@@ -89,7 +89,7 @@
 <div class="max-w-6xl mx-auto px-4 py-12">
     <div class="max-w-2xl mx-auto text-center px-8 mt-12">
         <h3 class="text-sm uppercase tracking-widest text-gray-500">T E A M</h3>
-        <h2 class="text-3xl font-bold text-gray-900 mt-2">Our Teams</h2>
+        <h2  class="text-4xl font-extrabold  mt-2 bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">Our Teams</h2>
         <p class="text-gray-500 mt-4">
             Explore the innovative projects our talented teams have created, showcasing their expertise in web and app development.
         </p>
@@ -161,55 +161,66 @@
  
 
 <div class="max-w-6xl mx-auto px-4 py-12">
+    <!-- Header Section -->
     <div class="max-w-2xl mx-auto text-center px-8 mt-12">
-        <h3 class="text-sm uppercase tracking-widest text-gray-500">C L I E N T</h3>
-        <h2 class="text-3xl font-bold text-gray-900 mt-2">Our Clients</h2>
-        <p class="text-gray-500 mt-4">
-            Explore the innovative projects our talented teams have created, showcasing their expertise in web and app development.
+        <h3 class="text-sm uppercase tracking-widest text-gray-500 font-semibold">C L I E N T</h3>
+        <h2 class="text-4xl font-extrabold  mt-2 bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">Our Clients</h2>
+        <p class="text-gray-600 mt-4 text-lg">
+            Discover the innovative projects our talented teams have crafted, showcasing their expertise in web and app development.
         </p>
     </div>
 
+
     <div class="relative mt-10">
-        <div class="absolute w-1 bg-[#0D3C4B] h-full left-1/2 transform -translate-x-1/2"></div>
-        
-        <div class="relative flex items-center mb-12 flex-row-reverse">
-           
-            <div class="w-1/2 pr-0">
-                <img src="https://comestro.com/logo%20(2).png"
-                alt="Team Gamma Icon" 
-                class="w-40 h-40 object-cover rounded-full">
+        <div class="absolute w-1 bg-[#0D3C4B] h-full left-1/2 transform -translate-x-1/2 hidden md:block"></div>
+
+        <!-- Client 1 -->
+        <div class="relative flex flex-col md:flex-row items-center mb-12">
+            <div class="w-full md:w-1/2 md:pr-8 text-center md:text-right">
+                <h4 class="text-xl font-bold text-gray-900">Bihar Shop</h4>
+                <p class="text-gray-600 mt-2">
+                    A dynamic e-commerce platform with seamless UI/UX and robust backend integration.
+                </p>
             </div>
-            <div class="absolute w-4 h-4 left-1/2 transform -translate-x-1/2 z-10 bg-[#0D3C4B] rounded-full"></div>
+            <div class="w-full md:w-1/2 mt-4 md:mt-0 flex justify-center md:justify-start">
+                <img src="https://comestro.com/logo%20(2).png" alt="Comestro Logo" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-lg">
+            </div>
+            <div class="absolute w-4 h-4 left-1/2 transform -translate-x-1/2 z-10 bg-[#0D3C4B] rounded-full hidden md:block"></div>
         </div>
 
-
-
-        <div class="relative flex items-center mb-12 flex-row-reverse">
-           
-            <div class="w-1/2 pr-0">
-                <img src="https://comestro.com/image%20(3).png"
-                alt="Team Gamma Icon" 
-                class="w-40 h-40 object-cover rounded-full">
+        <!-- Client 2 -->
+        <div class="relative flex flex-col md:flex-row-reverse items-center mb-12">
+            <div class="w-full md:w-1/2 md:pl-8 text-center md:text-left">
+                <h4 class="text-xl font-bold text-gray-900">Smart Studio</h4>
+                <p class="text-gray-600 mt-2">
+                    A cutting-edge mobile app designed for scalability and performance optimization.
+                </p>
             </div>
-            <div class="absolute w-4 h-4 left-1/2 transform -translate-x-1/2 z-10 bg-[#0D3C4B] rounded-full"></div>
+            <div class="w-full md:w-1/2 mt-4 md:mt-0 flex justify-center md:justify-end">
+                <img src="https://comestro.com/image%20(3).png" alt="Tech Innovate Logo" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-lg">
+            </div>
+            <div class="absolute w-4 h-4 left-1/2 transform -translate-x-1/2 z-10 bg-[#0D3C4B] rounded-full hidden md:block"></div>
         </div>
 
-        <div class="relative flex items-center mb-12 flex-row-reverse">
-           
-            <div class="w-1/2 pr-0">
-                <img src="https://th.bing.com/th?id=OIP.jbeNLukc6-j5pzDYkIQ2uAHaHa&w=250&h=250&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2"
-                alt="Team Gamma Icon" 
-                class="w-40 h-40 object-cover rounded-full">
+        <!-- Client 3 -->
+        <div class="relative flex flex-col md:flex-row items-center mb-12">
+            <div class="w-full md:w-1/2 md:pr-8 text-center md:text-right">
+                <h4 class="text-xl font-bold text-gray-900">PtPi</h4>
+                <p class="text-gray-600 mt-2">
+                    A responsive web solution with stunning visuals and advanced functionality.
+                </p>
             </div>
-            <div class="absolute w-4 h-4 left-1/2 transform -translate-x-1/2 z-10 bg-[#0D3C4B] rounded-full"></div>
+            <div class="w-full md:w-1/2 mt-4 md:mt-0 flex justify-center md:justify-start">
+                <img src="https://th.bing.com/th?id=OIP.jbeNLukc6-j5pzDYkIQ2uAHaHa&w=250&h=250&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2" alt="Creative Solutions Logo" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-lg">
+            </div>
+            <div class="absolute w-4 h-4 left-1/2 transform -translate-x-1/2 z-10 bg-[#0D3C4B] rounded-full hidden md:block"></div>
         </div>
-
     </div>
 </div>
 
 <div class="max-w-2xl mx-auto text-center px-8 mt-12">
     <h3 class="text-sm uppercase tracking-widest text-gray-500">S E R V I C E</h3>
-    <h2 class="text-3xl font-bold text-gray-900 mt-2">Our Service</h2>
+    <h2 class="text-4xl font-extrabold  mt-2 bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">Our Service</h2>
     <p class="text-gray-500 mt-4">
         Explore the innovative projects our talented teams have created, showcasing their expertise in web and app development.
     </p>
@@ -309,16 +320,17 @@
        
     }
 </style>
-<div class="max-w-2xl mx-auto text-center px-8 mt-8">
-    <h3 class="text-sm uppercase tracking-widest text-gray-500">C O N T A C T</h3>
-    <h2 class="text-3xl font-bold text-gray-900  mt-2">Let's talk with us</h2>
-    <div class="text-center  mt-3 mb-5 ">
-        <a href="{{route('contact')}}" class=" px-6 py-3 border border-black rounded-full text-black hover:bg-white hover:text-pink-500 font-700 transition inline-block">
-            Get in touch
+<div class="max-w-2xl mx-auto text-center px-8 mt-5">
+    <h3 class="text-sm uppercase tracking-widest text-gray-500 font-semibold">C O N T A C T</h3>
+    <h2  class="text-4xl font-extrabold  mt-2 bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">Let’s Connect With Us</h2>
+    <p class="text-gray-600 mt-2 mb-6">We’d love to hear from you! Reach out and let’s start a conversation.</p>
+    <div class="text-center">
+        <a href="{{route('contact')}}" class="px-8 py-4 border-2 border-black rounded-full text-black bg-white font-bold text-lg hover:bg-gradient-to-r hover:bg-pink-500 hover:text-white hover:border-transparent transition-all duration-300 inline-block shadow-md">
+            Get in Touch
         </a>
-    </div> 
+    </div>
 </div>
 
-
+<div class="bg-gray-100 py-12"></div>
 </div>
 </div>
