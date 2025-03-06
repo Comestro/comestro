@@ -4,6 +4,7 @@ use App\Livewire\Admin\Account\AddAccount;
 use App\Livewire\Admin\Account\ManageAccount;
 use App\Livewire\Admin\AddLead;
 use App\Livewire\Admin\Contact\ManageContact;
+use App\Livewire\Admin\Deal\AddDeal;
 use App\Livewire\Admin\Setting\ManageSetting;
 use App\Livewire\Admin\Dashboard;
 use App\Livewire\Admin\Deal\ManageDeal;
@@ -56,7 +57,7 @@ Route::middleware(['middleware' => 'auth'])->group(function(){
 
     });  
     Route::group(['prefix' => 'deals'], function () {
-        // Route::get('/add-lead',LeadInformation::class)->name('add_lead');
+        Route::get('/add-deal',AddDeal::class)->name('add_deal');
         Route::get('/manage-deals',ManageDeal::class)->name('manage_deals');
        
 
