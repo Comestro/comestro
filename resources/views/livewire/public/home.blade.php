@@ -33,6 +33,6 @@
         />
     </div>
 </section>
-<x-public.home.recentblog/>
+ <x-public.home.recent-blog/> 
 
 </div>

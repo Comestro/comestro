@@ -1,22 +1,4 @@
 <div>
-   
-    {{-- <div class="max-w-4xl mx-auto px-6 py-12 bg-white ">
-        <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/html5-parallax-website-templates.jpg.webp" alt="Blog Image" class="w-full h-80 object-cover rounded-md">
-        
-        <h2 class="text-3xl font-bold text-gray-800 mt-6">Blog Title</h2>
-        <p class="text-gray-500 text-sm mt-2">Published on March 4, 2025</p>
-
-        <p class="text-gray-700 mt-6 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum lorem in nisl dictum, sed lacinia odio pulvinar. Vestibulum tincidunt venenatis est, non fringilla justo vulputate ut. Integer ut odio nec arcu accumsan cursus.
-        </p>
-
-        <p class="text-gray-700 mt-4 leading-relaxed">
-            Donec at libero sed ipsum faucibus fringilla. Phasellus vel nunc vitae risus consequat placerat a et dui. Nulla facilisi. Suspendisse auctor justo non nisi hendrerit, et venenatis eros volutpat.
-        </p>
-
-      
-        <a href="{{route('blog')}}" class="block mt-6 text-blue-600 font-semibold">← Back to Blog</a>
-    </div> --}}
       <div class="container mx-auto p-6">
         <div class="flex flex-col lg:flex-row gap-8">
           
