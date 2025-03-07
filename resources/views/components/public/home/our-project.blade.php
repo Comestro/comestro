@@ -24,7 +24,7 @@
                 <p class="text-gray-500 mt-2">
                     A powerful e-commerce platform enabling multiple vendors to sell their products with seamless order management.
                 </p>
-                <a href="#" class="mt-4 inline-block px-4 py-2 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition">
+                <a href="#" class="mt-4 inline-block px-4 py-2 bg-red-500 text-white rounded-full hover:bg-red-600 transition">
                     View Project &rarr;
                 </a>
             </div>
@@ -43,7 +43,7 @@
                 <p class="text-gray-500 mt-2">
                     A complete solution for managing laborers, franchises, staff, and end clients efficiently.
                 </p>
-                <a href="#" class="mt-4 inline-block px-4 py-2 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition">
+                <a href="#" class="mt-4 inline-block px-4 py-2 bg-red-500 text-white rounded-full hover:bg-red-600 transition">
                     View Project &rarr;
                 </a>
             </div>
@@ -63,7 +63,7 @@
                 <p class="text-gray-500 mt-2 leading-relaxed">
                     A sleek platform designed for users to effortlessly capture, upload, and share website screenshots with built-in editing tools.
                 </p>
-                <a href="#" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full hover:bg-pink-600 hover:shadow-lg transition-all duration-300">
+                <a href="#" class="mt-4 inline-block px-6 py-2 bg-red-500 text-white rounded-full hover:bg-red-600 hover:shadow-lg transition-all duration-300">
                     View Project &rarr;
                 </a>
             </div>
