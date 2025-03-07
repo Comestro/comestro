@@ -100,7 +100,7 @@
                                     <select class="form-select @error('contact_id') is-invalid @enderror" wire:model="contact_id">
                                         <option value="">Select Contact</option>
                                         @foreach ($contacts as $contact)
-                                            <option value="{{ $contact->id }}">{{ $contact->name }}</option>
+                                            <option value="{{ $contact->id }}">{{ $contact->contact_name }}</option>
                                         @endforeach
                                     </select>
                                     @error('contact_id')
