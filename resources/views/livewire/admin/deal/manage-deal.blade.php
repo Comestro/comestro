@@ -68,8 +68,8 @@
                                                 <td>{{ $deal->amount }}</td>
                                                 <td>{{ $deal->deal_stage }}</td>
                                                 <td>{{ $deal->closing_date }}</td>
-                                                <td>{{ $deal->account->name ?? 'N/A' }}</td>
-                                                <td>{{ $deal->contact->name ?? 'N/A' }}</td>
+                                                <td>{{$deal->account->account_name}}</td>
+                                                <td>{{$deal->contact->contact_name}}</td>
                                                 <td>
                                                     <div class="d-flex align-items-center">
                                                         <a href="#" class="text-secondary me-3" title="Edit" wire:click="edit({{ $deal->id }})">
@@ -132,7 +132,7 @@
                                             <select class="form-control @error('account_id') is-invalid @enderror" wire:model="account_id">
                                                 <option value="">Select Account</option>
                                                 @foreach ($accounts as $account)
-                                                    <option value="{{ $account->id }}">{{ $account->name }}</option>
+                                                    <option value="{{ $account->id }}">{{$account->account_name }}</option>
                                                 @endforeach
                                             </select>
                                             @error('account_id') <span class="text-danger">{{ $message }}</span> @enderror
@@ -142,7 +142,7 @@
                                             <select class="form-control @error('contact_id') is-invalid @enderror" wire:model="contact_id">
                                                 <option value="">Select Contact</option>
                                                 @foreach ($contacts as $contact)
-                                                    <option value="{{ $contact->id }}">{{ $contact->name }}</option>
+                                                    <option value="{{ $contact->id }}">{{ $contact->contact_name }}</option>
                                                 @endforeach
                                             </select>
                                             @error('contact_id') <span class="text-danger">{{ $message }}</span> @enderror
