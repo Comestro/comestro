@@ -5,6 +5,7 @@ use App\Livewire\Admin\Account\ManageAccount;
 use App\Livewire\Admin\AddLead;
 use App\Livewire\Admin\Blog\CreateBlog;
 use App\Livewire\Admin\Contact\ManageContact;
+use App\Livewire\Admin\Contact\CreateContact;
 use App\Livewire\Admin\Course\CreateCourse;
 use App\Livewire\Admin\Deal\AddDeal;
 use App\Livewire\Admin\Setting\ManageSetting;
@@ -55,6 +56,7 @@ Route::middleware(['middleware' => 'auth'])->group(function(){
      Route::group(['prefix' => 'contacts'], function () {
         // Route::get('/add-lead',LeadInformation::class)->name('add_lead');
         Route::get('/manage-contacts',ManageContact::class)->name('manage_contacts');
+        Route::get('/create',CreateContact::class)->name('create');
        
 
     });  

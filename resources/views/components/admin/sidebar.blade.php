@@ -202,7 +202,7 @@
                         </a>
                         <ul id="app4" class="submenu collapse" data-parent="#iq-sidebar-toggle">
                             <li class=" sidebar-layout">
-                                <a href="{{ route('add_lead') }}" class="svg-icon">
+                                <a href="{{ route('create') }}" class="svg-icon">
                                     <i class=""><svg xmlns="http://www.w3.org/2000/svg" width="18"
                                             fill="none" viewbox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

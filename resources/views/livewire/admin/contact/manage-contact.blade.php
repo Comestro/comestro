@@ -21,7 +21,7 @@
                                         </a>
                                     </div>
                                 </form>
-                                <a href="" class="btn btn-primary position-relative d-flex align-items-center justify-content-between">
+                                <a href="{{route('create')}}" class="btn btn-primary position-relative d-flex align-items-center justify-content-between">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="20" fill="none" viewbox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                                     </svg>
