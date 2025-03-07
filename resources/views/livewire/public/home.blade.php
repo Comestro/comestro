@@ -1,6 +1,5 @@
 <div>
     <x-public.home.banner/>
-  <x-public.home.services/>
   <x-public.home.our-project/>
 
   <x-public.home.achievements/>
