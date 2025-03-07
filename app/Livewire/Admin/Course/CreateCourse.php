@@ -37,7 +37,7 @@ class CreateCourse extends Component
 
         Course::create($courseData);
 
-        session()->flash('message', 'Blog created successfully!');
+        session()->flash('message', 'Course created successfully!');
         
        
         $this->reset(['title', 'description', 'image']);

@@ -100,10 +100,14 @@
               </div>
 
               <hr class="mt-3">
-               <div class="flex items-center mt-4 space-x-4">
-                  <img src="{{ asset('storage/' . $courses->first()->image ?? 'placeholder.jpg') }}" alt="Course Image" class="w-16 h-16 rounded-lg shadow-md">
-                  <p class="text-gray-700 text-sm">{{ Str::limit($courses->first()->description ?? 'No description', 50, '...') }}</p>
-              </div> 
+              @if($courses->isNotEmpty())
+    <div class="flex items-center mt-4 space-x-4">
+        <img src="{{ asset('storage/' . $courses->first()->image ?? 'placeholder.jpg') }}" alt="Course Image" class="w-16 h-16 rounded-lg shadow-md">
+        <p class="text-gray-700 text-sm">{{ Str::limit($courses->first()->description ?? 'No description', 50, '...') }}</p>
+    </div>
+@else
+    <p class="text-gray-700 text-sm">No courses available.</p>
+@endif
              
 
               <hr class="mt-3">
