@@ -1,4 +1,4 @@
-@props(['blogs'])
+{{-- @props(['blogs']) --}}
 
 <div class="bg-gray-100">
 
@@ -13,7 +13,7 @@
             Explore the innovative projects we've created, showcasing our expertise in web and app development.
         </p>
      </div> 
-      {{-- <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-7">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-7">
         <!-- Blog Card 1 -->
         <div class="bg-white  overflow-hidden">
             <img src="https://th.bing.com/th/id/OIP.ryWQSHNlKkfDz3-mHlytigHaE9?w=272&h=182&c=7&r=0&o=5&pid=1.7" alt="Blog Post 1" class="w-full h-48 object-cover">
@@ -49,9 +49,9 @@
                 </p>
             </div>
         </div>
-    </div>    --}}
+    </div>   
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-7">
+    {{-- <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-7">
         @foreach($blogs as $blog)
             <div class="bg-white overflow-hidden">
                 <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}" class="w-full h-64 object-cover">
@@ -64,6 +64,6 @@
                 </div>
             </div>
         @endforeach
-    </div>
+    </div> --}}
 </div>
 </div>

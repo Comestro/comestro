@@ -73,14 +73,14 @@ Route::middleware(['middleware' => 'auth'])->group(function(){
 });
 // Route::get('/admin-dashboard',Dashboard::class)->name('admin-dashboard');
 
-Route::get('/clear-cache', function () {
-    Artisan::call('cache:clear');
-    Artisan::call('config:cache');
-    Artisan::call('config:clear');
-    Artisan::call('view:clear');
-    Artisan::call('route:clear');
-    // Artisan::call('optimize:clear');
+// Route::get('/clear-cache', function () {
+//     Artisan::call('cache:clear');
+//     Artisan::call('config:cache');
+//     Artisan::call('config:clear');
+//     Artisan::call('view:clear');
+//     Artisan::call('route:clear');
+//     // Artisan::call('optimize:clear');
 
-    return "All Caches are cleared by @Roni";
-});
+//     return "All Caches are cleared by @Roni";
+// });
 

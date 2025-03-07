@@ -33,6 +33,6 @@
         />
     </div>
 </section>
- <x-public.home.recent-blog/> 
+ {{-- <x-public.home.recent-blog/>  --}}
 
 </div>
