@@ -54,7 +54,7 @@
        
     <div class="flex flex-col md:flex-row items-center md:items-start">
         <div class="relative overflow-hidden md:w-1/2">
-            <img src="{{ asset('home/projects/learn.png') }}" alt="Screenshot Sharing Platform" class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105">
+            <img src="{{ asset('home/projects/ssf.png') }}" alt="Screenshot Sharing Platform" class="w-full h-auto object-cover transition-transform duration-300 hover:scale-105">
         </div>
         <div class="mt-6 md:mt-0 md:ml-6 md:w-1/2 flex justify-center">
             <div class="text-center md:text-left max-w-md mt-7">
