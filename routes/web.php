@@ -5,6 +5,7 @@ use App\Livewire\Admin\Account\ManageAccount;
 use App\Livewire\Admin\AddLead;
 use App\Livewire\Admin\Blog\CreateBlog;
 use App\Livewire\Admin\Contact\ManageContact;
+use App\Livewire\Admin\Blog\ManageBlog;
 use App\Livewire\Admin\Contact\CreateContact;
 use App\Livewire\Admin\Course\CreateCourse;
 use App\Livewire\Admin\Deal\AddDeal;
@@ -69,6 +70,7 @@ Route::middleware(['middleware' => 'auth'])->group(function(){
    
   Route::get('/admin/settings', ManageSetting::class)->name('admin.settings');
   Route::get('/admin/blogs', CreateBlog::class)->name('admin.blogs.create');
+  Route::get('/admin/blogs/manage-blog', ManageBlog::class)->name('admin.blogs.manage-blog');
   Route::get('/admin/courses', CreateCourse::class)->name('admin.course.create');
 });
 // Route::get('/admin-dashboard',Dashboard::class)->name('admin-dashboard');

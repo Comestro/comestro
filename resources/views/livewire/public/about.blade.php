@@ -95,58 +95,62 @@
         </p>
     </div>
 
-    <div class="relative mt-10">
+      <div class="relative mt-10">
         <div class="absolute w-1 bg-[#0D3C4B] h-full left-1/2 transform -translate-x-1/2"></div>
-        
-      
-        <div class="relative flex items-center mb-12">
+          <div class="relative flex items-center mb-12"> 
             <div class="w-1/2 pr-8 text-right">
-                <h3 class="text-lg font-semibold text-gray-800">Team Alpha - Project PtPi</h3>
+                <a href="https://ptpinstitute.com/" class="text-lg font-semibold text-gray-800">Team Alpha - Project PtPi</a>
+
                 <p class="text-sm text-gray-500 mt-2">March 15, 2023 - Lead: Archana • 5 Members</p>
                 <p class="text-gray-600 mt-4 text-sm">
-                    Team Alpha developed "school," a cutting-edge web platform for real-time collaboration, integrating advanced APIs and a sleek UI. Launched after 6 months of intense coding sprints.
+                    Team Alpha developed "school," We provide qualified teachers committed to shaping a brighter future for your students. Login today and connect with our expert educators
                 </p>
             </div>
-            <div class="w-1/2 pl-8">
-                <img src="https://th.bing.com/th/id/OIP.ryWQSHNlKkfDz3-mHlytigHaE9?w=272&h=182&c=7&r=0&o=5&pid=1.7" alt="" class="w-full h-48 object-cover rounded-lg shadow-md">
-            </div>
+             <div class=" w-1/2 pl-8 ">
+                <img src="{{ asset('home/p1.png') }}" alt="" class="w-full h-48 object-cover rounded-lg shadow-md">
+            </div> 
+            
+            
           
             <div class="absolute w-8 h-8 left-1/2 transform -translate-x-1/2 z-10">
                 <img src="https://th.bing.com/th/id/OIP.vbBofphzBR6asenSaAmw8QHaHa?w=197&h=197&c=7&r=0&o=5&pid=1.7"
                      alt="Team Gamma Icon" 
                      class="w-full h-full object-cover rounded-full border-2 border-gray-900">
             </div>
-        </div>
+        </div> 
+        
 
         <div class="relative flex items-center mb-12 flex-row-reverse">
             <div class="w-1/2 pl-8 text-left">
-                <h3 class="text-lg font-semibold text-gray-800">Team Beta - Learn Syntax</h3>
+                <a href="https://learnsyntax.com/" class="text-lg font-semibold text-gray-800 cursor-pointer">Team Beta - Project LearnSyntax</a>
+
                 <p class="text-sm text-gray-500 mt-2">August 22, 2023 - Lead: Sadique • 4 Members</p>
                 <p class="text-gray-600 mt-4 text-sm">
-                    Team Beta crafted "Learniong," a cross-platform app for seamless file sharing between devices. Built with Flutter, it reduced sync times by 40% compared to competitors.
+                    Team Beta crafted "Learning," Dive into a space where creativity meets innovation. Learn, build, and transform ideas into impactful solutions through hands-on experience and expert guidance.
                 </p>
             </div>
             <div class="w-1/2 pr-8">
-                <img src="https://th.bing.com/th/id/OIP.N4W-pN3fBtrtT2OXwntVDgHaFj?w=261&h=196&c=7&r=0&o=5&pid=1.7" alt="" class="w-full h-48 object-cover rounded-lg shadow-md">
+                <img src="{{ asset('home/l1.png') }}" alt="" class="w-full h-48 object-cover rounded-lg shadow-md">
             </div>
             <div class="absolute w-8 h-8 left-1/2 transform -translate-x-1/2 z-10">
                 <img src="{{ asset('home/projects/learn.png') }}" alt="Team Beta Icon" class="w-full h-full object-cover rounded-full border-2 border-gray-900">
             </div>
             
             
-        </div>
-
+        </div> 
+         
        
         <div class="relative flex items-center mb-12">
             <div class="w-1/2 pr-8 text-right">
-                <h3 class="text-lg font-semibold text-gray-800">Team Gamma - Comestro</h3>
+                 <a href="https://smartstudiocreation.com/" class="text-lg font-semibold text-gray-800 cursor-pointer">Team Gamma - Project SmartStudio</a> 
+                
                 <p class="text-sm text-gray-500 mt-2">January 10, 2024 - Lead: Sarita • 6 Members</p>
                 <p class="text-gray-600 mt-4 text-sm">
-                    Team Gamma built "professional," a web dashboard for tracking carbon footprints. Using React and real-time data visualization, it’s now used by over 50 companies worldwide.
+                    Team Gamma built "professional," Explore the beauty captured through the lens. Dive into a world of moments and memories preserved forever.
                 </p>
             </div>
             <div class="w-1/2 pl-8">
-                <img src="https://th.bing.com/th/id/OIP.N4W-pN3fBtrtT2OXwntVDgHaFj?w=261&h=196&c=7&r=0&o=5&pid=1.7" alt="" class="w-full h-48 object-cover rounded-lg shadow-md">
+                <img src="{{ asset('home/Smart.png') }}" alt="" class="w-full h-48 object-cover rounded-lg shadow-md">
             </div>
          
             <div class="absolute w-8 h-8 left-1/2 transform -translate-x-1/2 z-10">
@@ -156,7 +160,11 @@
             </div>
             
         </div>
-    </div>
+      
+    </div>  
+   
+    
+    
 </div>
 
 
