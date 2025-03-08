@@ -49,11 +49,11 @@ class ManageBlog extends Component
         ];
 
         if ($this->image) {
-            // Delete old image if it exists
+            
             if ($blog->image) {
                 Storage::disk('public')->delete($blog->image);
             }
-            // Store new image
+           
             $imagePath = $this->image->store('blog-images', 'public');
             $blogData['image'] = $imagePath;
         }
