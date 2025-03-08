@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Datum | CRM Admin Dashboard Template</title>
@@ -20,62 +20,23 @@
     <link href="../../css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="../../css2-1?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
-</head>
+</head> 
 
-<body class="  ">
-    <div class="wrapper">
+  <body class="">
+  
+     {{-- <div class="wrapper">
         <section class="login-content">
             <div class="container h-100">
                 <div class="row align-items-center justify-content-center h-100">
                     <div class="col-md-12 col-lg-6">
-                        <div class="card">
+                          <div class="card">
                             <div class="card-body">
                                 <a href="index.html" class="auth-logo">
-                                    <img src="assets/images/logo-dark.png" class="img-fluid rounded-normal"
+                                    <img src="{{ asset('home/comestro.png') }}" class="img-fluid rounded-normal"
                                         alt="logo">
                                 </a>
-                                <h3 class="mb-3 font-weight-bold text-center">Sign In</h3>
-                                <p class="text-center text-secondary mb-4">Log in to your account to continue</p>
-                                <div class="social-btn d-flex justify-content-around align-items-center mb-4">
-                                    <button class="btn btn-outline-light">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewbox="88.428 12.828 107.543 207.085">
-                                            <path
-                                                d="M158.232 219.912v-94.461h31.707l4.747-36.813h-36.454V65.134c0-10.658 2.96-17.922 18.245-17.922l19.494-.009V14.278c-3.373-.447-14.944-1.449-28.406-1.449-28.106 0-47.348 17.155-47.348 48.661v27.149H88.428v36.813h31.788v94.461l38.016-.001z"
-                                                fill="#3c5a9a"></path>
-                                        </svg>
-                                    </button>
-                                    <button class="btn btn-outline-light">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewbox="0 0 256 262" preserveaspectratio="xMidYMid">
-                                            <path
-                                                d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"
-                                                fill="#4285F4"></path>
-                                            <path
-                                                d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"
-                                                fill="#34A853"></path>
-                                            <path
-                                                d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"
-                                                fill="#FBBC05"></path>
-                                            <path
-                                                d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"
-                                                fill="#EB4335"></path>
-                                        </svg>
-                                    </button>
-                                    <button class="btn btn-outline-light">
-                                        <svg width="20" height="20" viewbox="328 355 335 276"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M 630, 425 A 195, 195 0 0 1 331, 600 A 142, 142 0 0 0 428, 570A  70,  70 0 0 1 370, 523A  70,  70 0 0 0 401, 521A  70,  70 0 0 1 344, 455A  70,  70 0 0 0 372, 460A  70,  70 0 0 1 354, 370A 195, 195 0 0 0 495, 442A  67,  67 0 0 1 611, 380A 117, 117 0 0 0 654, 363A  65,  65 0 0 1 623, 401A 117, 117 0 0 0 662, 390A  65,  65 0 0 1 630, 425Z"
-                                                style="fill:#3BA9EE;"></path>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="mb-5">
-                                    <p class="line-around text-secondary mb-0"><span class="line-around-1">or login with
-                                            email</span>
-                                    </p>
-                                </div>
+                                 <h3 class="mb-3 font-weight-bold text-center">Sign In</h3> 
+                                 <p class="text-center text-secondary mb-4">Log in to your account to continue</p> 
                                 <form wire:submit.prevent="login">
                                     @if (session()->has('error'))
                                         <div class="alert alert-danger">
@@ -116,10 +77,77 @@
                                     </div>
                                 </form>
                             </div>
-                        </div>
+                        </div>  
+                       
                     </div>
                 </div>
             </div>
         </section>
+    </div>  --}}
+    
+      <div class="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    <div class="w-full max-w-md">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <a href="index.html" class="flex justify-center mb-8">
+                <img src="{{ asset('home/comestro.png') }}" class="max-w-[180px] h-auto" alt="logo">
+            </a>
+            
+            
+
+            <form wire:submit.prevent="login">
+                @if (session()->has('error'))
+                    <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-6 rounded">
+                        {{ session('error') }}
+                    </div>
+                @endif
+
+                @if (session()->has('success'))
+                    <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-6 rounded">
+                        {{ session('success') }}
+                    </div>
+                @endif
+
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                        <input 
+                            class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-400" 
+                            type="email" 
+                            wire:model="email" 
+                            placeholder="Enter your email"
+                        >
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="block text-sm font-medium text-gray-700">Password</label>
+                            <a href="auth-recover-pwd.html" class="text-sm text-blue-600 hover:text-blue-800 transition-colors">Forgot Password?</a>
+                        </div>
+                        <input 
+                            class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-400" 
+                            type="password" 
+                            wire:model="password" 
+                            placeholder="Enter your password"
+                        >
+                    </div>
+
+                    <button 
+                        type="submit" 
+                        class="w-full bg-blue-600 text-white py-3 rounded-md font-medium hover:bg-blue-700 transition-colors duration-200"
+                    >
+                        Sign In
+                    </button>
+                </div>
+
+                <p class="mt-6 text-center text-gray-600 text-sm">
+                    Don't have an account? 
+                    <a href="auth-sign-up.html" class="text-blue-600 hover:text-blue-800 transition-colors">Sign Up</a>
+                </p>
+            </form>
+        </div>
     </div>
-</body>
+    </div> 
+</body> 
+
+
+
