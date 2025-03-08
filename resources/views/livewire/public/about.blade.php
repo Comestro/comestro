@@ -86,7 +86,7 @@
 
 
 
-<div class="max-w-6xl mx-auto px-4 py-12">
+{{-- <div class="max-w-6xl mx-auto px-4 py-12">
     <div class="max-w-2xl mx-auto text-center px-8 mt-12">
         <h3 class="text-sm uppercase tracking-widest text-gray-500">T E A M</h3>
         <h2 class="text-3xl font-bold text-gray-900 mt-2">Our Teams</h2>
@@ -165,9 +165,77 @@
    
     
     
+</div> --}}
+
+<div class="max-w-6xl mx-auto px-4 py-12">
+    <div class="max-w-2xl mx-auto text-center px-8 mt-8">
+        <h3 class="text-sm uppercase tracking-widest text-gray-500 font-semibold">T E A M</h3>
+        <h2 class="text-3xl font-bold text-gray-900 mt-2">Our Teams</h2>
+        <p class="text-gray-500 mt-4">
+            Explore the innovative projects our talented teams have created, showcasing their expertise in web and app development.
+        </p>
+    </div>
+
+    <div class="relative mt-20">
+      
+        <div class="absolute w-1 bg-[#0D3C4B] h-full left-1/2 transform -translate-x-1/2 hidden md:block"></div>
+
+        <!-- Team Alpha -->
+        <div class="relative flex flex-col md:flex-row items-center mb-12">
+            <div class="w-full md:w-1/2 md:pr-8 text-center md:text-right">
+                <a href="https://ptpinstitute.com/" class="text-lg font-semibold text-gray-800">Team Alpha - Project PtPi</a>
+                <p class="text-sm text-gray-500 mt-2">March 15, 2023 - Lead: Archana • 5 Members</p>
+                <p class="text-gray-600 mt-4 text-sm">
+                    Team Alpha developed "school," We provide qualified teachers committed to shaping a brighter future for your students. Login today and connect with our expert educators.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2 mt-4 md:mt-0 md:pl-8">
+                <img src="{{ asset('home/p1.png') }}" alt="Team Alpha Project" class="w-full h-48 object-cover rounded-lg shadow-md">
+            </div>
+            <div class="absolute w-8 h-8 left-1/2 transform -translate-x-1/2 z-10 hidden md:block">
+                <img src="https://th.bing.com/th/id/OIP.vbBofphzBR6asenSaAmw8QHaHa?w=197&h=197&c=7&r=0&o=5&pid=1.7"
+                     alt="Team Alpha Icon" 
+                     class="w-full h-full object-cover rounded-full border-2 border-gray-900">
+            </div>
+        </div>
+
+        <!-- Team Beta -->
+        <div class="relative flex flex-col md:flex-row-reverse items-center mb-12">
+            <div class="w-full md:w-1/2 md:pl-8 text-center md:text-left">
+                <a href="https://learnsyntax.com/" class="text-lg font-semibold text-gray-800 cursor-pointer">Team Beta - Project LearnSyntax</a>
+                <p class="text-sm text-gray-500 mt-2">August 22, 2023 - Lead: Sadique • 4 Members</p>
+                <p class="text-gray-600 mt-4 text-sm">
+                    Team Beta crafted "Learning," Dive into a space where creativity meets innovation. Learn, build, and transform ideas into impactful solutions through hands-on experience and expert guidance.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2 mt-4 md:mt-0 md:pr-8">
+                <img src="{{ asset('home/l1.png') }}" alt="Team Beta Project" class="w-full h-48 object-cover rounded-lg shadow-md">
+            </div>
+            <div class="absolute w-8 h-8 left-1/2 transform -translate-x-1/2 z-10 hidden md:block">
+                <img src="{{ asset('home/projects/learn.png') }}" alt="Team Beta Icon" class="w-full h-full object-cover rounded-full border-2 border-gray-900">
+            </div>
+        </div>
+
+        <!-- Team Gamma -->
+        <div class="relative flex flex-col md:flex-row items-center mb-12">
+            <div class="w-full md:w-1/2 md:pr-8 text-center md:text-right">
+                <a href="https://smartstudiocreation.com/" class="text-lg font-semibold text-gray-800 cursor-pointer">Team Gamma - Project SmartStudio</a>
+                <p class="text-sm text-gray-500 mt-2">January 10, 2024 - Lead: Sarita • 6 Members</p>
+                <p class="text-gray-600 mt-4 text-sm">
+                    Team Gamma built "professional," Explore the beauty captured through the lens. Dive into a world of moments and memories preserved forever.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2 mt-4 md:mt-0 md:pl-8">
+                <img src="{{ asset('home/Smart.png') }}" alt="Team Gamma Project" class="w-full h-48 object-cover rounded-lg shadow-md">
+            </div>
+            <div class="absolute w-8 h-8 left-1/2 transform -translate-x-1/2 z-10 hidden md:block">
+                <img src="https://th.bing.com/th/id/OIP.xgpkc6kouXD4WGAgRsOtYgHaE8?w=301&h=200&c=7&r=0&o=5&pid=1.7" 
+                     alt="Team Gamma Icon" 
+                     class="w-full h-full object-cover rounded-full border-2 border-gray-900">
+            </div>
+        </div>
+    </div>
 </div>
-
-
 
 </div>
 </div>
