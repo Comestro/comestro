@@ -225,7 +225,7 @@
                 top: 0;
                 left: 0;
                 border-radius: 10px;
-                background: palevioletred;
+                 background: rgb(246 91 49);
                 transform: rotate(0deg);
                 z-index: -1;
                 transition: transform 0.3s ease; 
@@ -236,7 +236,7 @@
             }
             .grid svg {
             font-size: 2.5rem;
-            color: #db2777; 
+            color: #2781db; 
             margin-top: 40px;
             margin-bottom: 10px;
            
