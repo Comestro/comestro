@@ -1,29 +1,22 @@
 <?php
 
-namespace App\View\Components\public\home;
+
+namespace App\View\Components\Public\Home;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
+use App\Models\Customer;
 
 class OurCustomer extends Component
 {
-    /**
-     * Create a new component instance.
-     */
-    public $image, $name, $designation, $message;
+    public $customers;
 
-    public function __construct($image, $name, $designation, $message)
+    public function __construct()
     {
-        $this->image = $image;
-        $this->name = $name;
-        $this->designation = $designation;
-        $this->message = $message;
+        $this->customers = Customer::latest()->take(3)->get();
     }
 
-    /**
-     * Get the view / contents that represent the component.
-     */
     public function render(): View|Closure|string
     {
         return view('components.public.home.our-customer');
