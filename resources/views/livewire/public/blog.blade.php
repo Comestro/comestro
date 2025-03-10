@@ -62,7 +62,7 @@
                               <p class="text-gray-600 mt-4 text-sm">
                                   {{ Str::limit($blog->content ?? $blog->description, 100, '...') }}
                               </p>
-                              <a href="#" class="mt-4 text-pink-500 hover:underline">Read More →</a>
+                              <a href="#" class="mt-4 text-orange-500 hover:underline">Read More →</a>
                           </div>
                       </div>
                   @endforeach
