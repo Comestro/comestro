@@ -36,7 +36,7 @@ Route::get('/service',Service::class)->name('service');
 Route::get('/about',About::class)->name('about');
 Route::get('/blog',Blog::class)->name('blog');
 Route::get('/portfolio',Portfolio::class)->name('portfolio');
-Route::get('/read-more',ReadMore::class)->name('read-more');
+Route::get('/read-more/{blogId}', ReadMore::class)->name('read-more');
 Route::get('/admin-login',Login::class)->name('login');
 
 Route::middleware(['middleware' => 'auth'])->group(function(){
