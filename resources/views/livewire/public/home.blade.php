@@ -4,7 +4,7 @@
 
   <x-public.home.achievements/>
 
-  <x-public.home.our-customer />
- <x-public.home.recent-blog/> 
+  {{-- <x-public.home.our-customer/> --}}
+ {{-- <x-public.home.recent-blog/>  --}}
 
 </div>
