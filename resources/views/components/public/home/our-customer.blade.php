@@ -11,6 +11,7 @@
         </div> 
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+            @if ($customers->isNotEmpty())
             @foreach ($customers as $customer)
                 <div class="bg-white  p-6 text-center">
                     <div class="relative w-20 h-20 mx-auto">
@@ -25,6 +26,9 @@
                     <p class="text-gray-400 text-sm">{{ $customer->designation }}</p>
                 </div>
             @endforeach
+            @else
+    <p>No customers found.</p>
+@endif
         </div>
     </div>
 </div>

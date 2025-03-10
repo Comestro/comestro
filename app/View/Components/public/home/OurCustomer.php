@@ -17,8 +17,10 @@ class OurCustomer extends Component
         $this->customers = Customer::latest()->take(3)->get();
     }
 
-    public function render(): View|Closure|string
+    public function render(): View
     {
-        return view('components.public.home.our-customer');
+        return view('components.public.home.our-customer', [
+            'customers' => $this->customers,
+        ]);
     }
 }
