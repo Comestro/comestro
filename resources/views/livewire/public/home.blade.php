@@ -4,7 +4,7 @@
 
   <x-public.home.achievements/>
 
-  <section class="py-16 bg-gray-100 text-center">
+  <section class="py-16 bg-gray-100 text-center p-4">
     <h3 class="text-gray-400 uppercase tracking-widest text-sm mt-2">Customer Says</h3>
     <h2 class="text-4xl font-bold text-gray-900 mt-2">Our Satisfied Customers</h2>
     <p class="text-gray-500 mt-4 max-w-2xl mx-auto">
@@ -32,6 +32,6 @@
         />
     </div>
 </section>
- {{-- <x-public.home.recent-blog/>  --}}
+ <x-public.home.recent-blog/> 
 
 </div>

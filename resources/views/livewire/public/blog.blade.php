@@ -60,7 +60,7 @@
                               <h3 class="text-lg font-semibold">{{ $blog->title }}</h3>
                               <p class="text-sm text-gray-500 mt-2">{{ $blog->created_at->format('M d, Y') }}</p>
                               <p class="text-gray-600 mt-4 text-sm">
-                                  {{ Str::limit($blog->content ?? $blog->description, 50, '...') }}
+                                  {{ Str::limit($blog->content ?? $blog->description, 100, '...') }}
                               </p>
                               <a href="#" class="mt-4 text-pink-500 hover:underline">Read More →</a>
                           </div>
@@ -71,7 +71,7 @@
 
           <!-- Sidebar with Courses -->
           <aside class="lg:w-1/3 w-full bg-white p-6">
-              <h2 class="text-lg font-bold">Popular Courses</h2>
+              <h2 class="text-lg font-bold">Popular Blogs</h2>
               @foreach($courses as $course)
                   <div class="mt-4">
                       <img src="{{ asset('storage/' . $course->image) }}" alt="{{ $course->title }}" class="w-full rounded-lg shadow-md">
