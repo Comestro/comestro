@@ -147,7 +147,7 @@
             
         </div>
     </section> --}}
-    <section class="py-16 relative z-10">
+    <section class="py-16 relative z-10 p-4">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
            <div class="bg-gray-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
