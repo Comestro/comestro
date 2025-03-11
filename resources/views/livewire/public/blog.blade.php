@@ -120,15 +120,15 @@
   </div>
 
   <!-- Comments Section -->
-  <div class="container mx-auto py-12 px-4">
+  {{-- <div class="container mx-auto py-12 px-4">
       <section class="bg-white p-6">
           <h3 class="text-2xl font-bold text-gray-900 mb-6">Comments (3)</h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="mt-6">
                   <h4 class="text-lg font-semibold text-gray-900 mb-4">Leave a Comment</h4>
                   <form>
-                      <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" rows="4" placeholder="Write your comment here..."></textarea>
-                      <button type="submit" class="mt-4 px-6 py-2 bg-pink-600 text-white rounded-full font-semibold hover:bg-pink-700 transition-colors">Post Comment ⇛</button>
+                      <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" rows="4" placeholder="Write your comment here..."></textarea>
+                      <button type="submit" class="mt-4 px-6 py-2 bg-orange-500 text-white rounded-full font-semibold hover:bg-orange-700 transition-colors">Post Comment ⇛</button>
                   </form>
               </div>
               <div>
@@ -155,6 +155,8 @@
               </div>
           </div>
       </section>
-  </div>
+  </div> --}}
+  <livewire:public.comment-section />
+
 </div>
 </div>
