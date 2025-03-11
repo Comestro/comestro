@@ -1,8 +1,5 @@
 <?php
-
-
 namespace App\View\Components\public\Home;
-
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
@@ -17,7 +14,7 @@ class OurCustomer extends Component
         $this->customers = Customer::latest()->take(3)->get();
     }
 
-    public function render(): View
+    public function render():View|Closure|string
     {
         return view('components.public.home.our-customer', [
             'customers' => $this->customers,
