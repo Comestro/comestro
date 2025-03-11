@@ -1,5 +1,5 @@
 <?php
-namespace App\View\Components\public\Home;
+namespace App\View\Components\Public\Home;
 
 use App\Models\Blog;
 use Illuminate\View\Component;
