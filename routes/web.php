@@ -13,6 +13,7 @@ use App\Livewire\Admin\Course\CreateCourse;
 use App\Livewire\Admin\Course\ManageCourse;
 use App\Livewire\Admin\Deal\AddDeal;
 use App\Livewire\Admin\Setting\ManageSetting;
+use App\Livewire\Admin\Comment\ManageComment;
 use App\Livewire\Admin\Dashboard;
 use App\Livewire\Admin\Deal\ManageDeal;
 use App\Livewire\Admin\Lead\ConvertLead;
@@ -72,6 +73,7 @@ Route::middleware(['middleware' => 'auth'])->group(function(){
     });
    
   Route::get('/admin/settings', ManageSetting::class)->name('admin.settings');
+  Route::get('/admin/comments', ManageComment::class)->name('admin.comments');
   Route::get('/admin/customers', CreateCustomer::class)->name('admin.customers.create');
   Route::get('/admin/customers/manage-customer', ManageCustomer::class)->name('admin.customers.manage-customer');
   Route::get('/admin/blogs', CreateBlog::class)->name('admin.blogs.create');
