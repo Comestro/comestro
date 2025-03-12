@@ -4,7 +4,6 @@
 
   <x-public.home.achievements/>
 
-   {{-- <x-public.home.our-customer/> 
- <x-public.home.recent-blog/>   --}}
-
+ <livewire:public.our-customer />
+ <livewire:public.recent-blog />
 </div>
