@@ -6,6 +6,7 @@ use Livewire\Component;
 use App\Models\Blog;
 use Livewire\Attributes\Layout;
 use Livewire\WithFileUploads;
+
 use Illuminate\Support\Facades\Storage;
 class CreateBlog extends Component
 {

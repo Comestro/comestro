@@ -1,44 +1,23 @@
-<div>
+ <div>
     <div class="iq-top-navbar">
         <div class="iq-navbar-custom">
-            <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <nav class="navbar navbar-expand-lg navbar-light p-0 mt-2">
                 <div class="side-menu-bt-sidebar">
                     <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary wrapper-menu" width="30" fill="none" viewbox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </div>
                 <div class="d-flex align-items-center">
-                    <div class="change-mode">
-                        <div class="custom-control custom-switch custom-switch-icon custom-control-inline">
-                            <div class="custom-switch-inner">
-                                <p class="mb-0"> </p>
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input custom-control-input" type="checkbox" id="dark-mode">
-                                    <label class="form-check-label custom-control-label" for="dark-mode">
-                                        <span class="switch-icon-right">
-                                            <svg xmlns="http://www.w3.org/2000/svg" id="h-moon" height="20" width="20" class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-                                            </svg>
-                                        </span>
-                                        <span class="switch-icon-left">
-                                            <svg xmlns="http://www.w3.org/2000/svg" id="h-sun" height="20" width="20" class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                                            </svg>
-                                        </span>
-                                </label></div>
-    
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+                   
+                    {{-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                         <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary" width="30" fill="none" viewbox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                         </svg>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    </button> --}}
+                   
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto navbar-list align-items-center">
-                            <li class="nav-item nav-icon dropdown">
+                            {{-- <li class="nav-item nav-icon dropdown">
                                 <a href="#" class="search-toggle dropdown-toggle" id="notification-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="h-6 w-6 text-secondary" fill="none" viewbox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
@@ -250,13 +229,16 @@
                                         </div>
                                     </form>
                                 </div>
-                            </li>
+                            </li> --}}
                             <li class="nav-item nav-icon dropdown">
                                 <a href="#" class="nav-item nav-icon dropdown-toggle pe-0 search-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img src="{{ asset('assets/images/user/1.jpg')}}" class="img-fluid avatar-rounded" alt="user">
-                                    <span class="mb-0 ms-2 user-name">John Doe</span>
+                                    <img src="https://th.bing.com/th?id=OIP.bkbn2-K7c9rMBV5dvYXDrQHaIh&w=233&h=268&c=8&rs=1&qlt=90&r=0&o=6&cb=15&pid=3.1&rm=2" class="img-fluid avatar-rounded" alt="user">
+                                    <span class="mb-0 ms-2 user-name">
+                                        <span class="text-primary">Com</span><span class="text-warning">estro</span>
+                                    </span>
+                                    
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                 {{-- <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                                     <li class="dropdown-item d-flex svg-icon">
                                         <svg class="svg-icon me-0 text-secondary" id="h-01-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -289,11 +271,12 @@
                                         <a href="auth-sign-in.html">Logout</a>
                                         <livewire:auth.logout/>
                                     </li>
-                                </ul>
+                                </ul>  --}}
                             </li>
                         </ul>
-                    </div>
+                    </div>   
                 </div>
             </nav>
         </div>
-    </div>  </div>
+    </div>  
+</div> 

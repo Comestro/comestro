@@ -5,100 +5,82 @@
             <div class="row">
                 <div class="col-md-12 mb-4 mt-1">
                     <div class="d-flex flex-wrap justify-content-between align-items-center">
-                        <h4 class="fw-bold mb-2 mb-lg-0">Overview</h4>
-                        <div class="form-group mb-0 vanila-daterangepicker d-flex flex-row">
-                            <div class="date-icon-set">
-                                <input type="text" name="start" class="form-control" placeholder="From Date">
-                                <span class="search-link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="" width="20" fill="none"
-                                        viewbox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
-                                        </path>
-                                    </svg>
-                                </span>
-                            </div>
-                            <span class="flex-grow-0">
-                                <span class="btn text-body">To</span>
-                            </span>
-                            <div class="date-icon-set">
-                                <input type="text" name="end" class="form-control" placeholder="To Date">
-                                <span class="search-link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="" width="20" fill="none"
-                                        viewbox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
-                                        </path>
-                                    </svg>
-                                </span>
-                            </div>
-                        </div>
+                        <h4 class="fw-bold mb-2 mb-lg-0">Admin Dashboard</h4>
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-12">
+                
+                <div class="col-lg-8 col-md-12 p-4">
                     <div class="row">
+                     
                         <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center">
-                                        <div class="">
-                                            <p class="mb-2 text-secondary">Total Profit</p>
-                                            <div class="d-flex flex-wrap justify-content-start align-items-center">
-                                                <h5 class="mb-0 fw-bold">$95,595</h5>
-                                                <p class="mb-0 ms-3 text-success fw-bold">+3.55%</p>
-                                            </div>
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <svg width="32" height="32" fill="currentColor" class="text-success me-2" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0Zm3.5 9.5H8v2h3.5v1.5L14 9l-2.5-3v1.5H8v2h3.5Z"/>
+                                        </svg>
+                                        <div>
+                                            <p class="mb-1 text-secondary">Total Account</p>
+                                            <h5 class="mb-0 fw-bold">{{$totalAccounts}}</h5>
+                                            
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                
+                      
                         <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center">
-                                        <div class="">
-                                            <p class="mb-2 text-secondary">Total Expenses</p>
-                                            <div class="d-flex flex-wrap justify-content-start align-items-center">
-                                                <h5 class="mb-0 fw-bold">$12,789</h5>
-                                                <p class="mb-0 ms-3 text-success fw-bold">+2.67%</p>
-                                            </div>
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <svg width="32" height="32" fill="currentColor" class="text-danger me-2" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0ZM5.5 6.5H8V4h2.5L8 9.5H5.5V6.5Z"/>
+                                        </svg>
+                                        <div>
+                                            <p class="mb-1 text-secondary">Total Deals</p>
+                                            <h5 class="mb-0 fw-bold">{{$totalDeals}}</h5>
+                                           
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                
+                     
                         <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center">
-                                        <div class="">
-                                            <p class="mb-2 text-secondary">New Users</p>
-                                            <div class="d-flex flex-wrap justify-content-start align-items-center">
-                                                <h5 class="mb-0 fw-bold">13,984</h5>
-                                                <p class="mb-0 ms-3 text-danger fw-bold">-9.98%</p>
-                                            </div>
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <svg width="32" height="32" fill="currentColor" class="text-primary me-2" viewBox="0 0 16 16">
+                                            <path d="M8 8a3 3 0 1 1 3-3A3 3 0 0 1 8 8Zm6 6a6 6 0 0 0-12 0H1a7 7 0 1 1 14 0Z"/>
+                                        </svg>
+                                        <div>
+                                            <p class="mb-1 text-secondary">Total Contacts</p>
+                                            <h5 class="mb-0 fw-bold">{{$totalContacts}}</h5>
+                                           
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                
+                        <!-- Sales Report -->
                         <div class="col-md-12">
-                            <div class="card">
+                            <div class="card shadow-sm border-0">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center flex-wrap">
                                         <h4 class="fw-bold">Sales Report</h4>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <div><svg width="24" height="24" viewbox="0 0 24 24" fill="primary"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <rect x="3" y="3" width="18" height="18" rx="2"
-                                                        fill="#1f1f7a"></rect>
+                                            <div>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="blue">
+                                                    <rect x="3" y="3" width="18" height="18" rx="2"></rect>
                                                 </svg>
                                                 <span>Incomes</span>
                                             </div>
-                                            <div class="ms-3"><svg width="24" height="24" viewbox="0 0 24 24"
-                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect x="3" y="3" width="18" height="18" rx="2"
-                                                        fill="#2e2eb8"></rect>
+                                            <div class="ms-3">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="red">
+                                                    <rect x="3" y="3" width="18" height="18" rx="2"></rect>
                                                 </svg>
                                                 <span>Expenses</span>
                                             </div>
@@ -110,7 +92,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-8">
+                
+                {{-- <div class="col-lg-4 col-md-8">
                     <div class="card card-block card-stretch card-height">
                         <div class="card-header card-header-border d-flex justify-content-between">
                             <div class="header-title">
@@ -174,7 +157,44 @@
                         </div>
                     </div>
 
-                </div>
+                </div> --}}
+               
+                
+                    <div class="col-lg-4 col-md-8">
+                        <div class="card card-block card-stretch card-height">
+                            <div class="card-header card-header-border d-flex justify-content-between">
+                                <div class="header-title">
+                                    <h4 class="card-title">Blogs</h4>
+                                </div>
+                            </div>
+                            <div class="card-body-list">
+                                <ul class="list-style-3 mb-0">
+                                    @foreach($blogs as $blog)
+                                        <li class="card-body list-item d-flex justify-content-start align-items-center border-bottom">
+                                            <div class="avatar">
+                                                @if($blog->image)
+                                                    <img class="avatar avatar-img avatar-60 rounded"
+                                                        src="{{ Storage::url($blog->image) }}" 
+                                                        alt="{{ $blog->title }}">
+                                                @else
+                                                    <img class="avatar avatar-img avatar-60 rounded"
+                                                        src="{{ asset('assets/images/default-blog.jpg') }}" 
+                                                        alt="{{ $blog->title }}">
+                                                @endif
+                                            </div>
+                                            <div class="list-style-detail ms-3 me-2">
+                                                <p class="mb-0">{{ Str::limit($blog->title, 20) }}</p>
+                                            </div>
+                                            <div class="list-style-action d-flex justify-content-end ms-auto">
+                                                <h6 class="fw-bold">{{ $blog->created_at->format('M d') }}</h6>
+                                            </div>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+              
 
                 <div class="col-lg-8 col-md-12 iq-dropdown">
                     <div class="card card-block card-stretch card-height">

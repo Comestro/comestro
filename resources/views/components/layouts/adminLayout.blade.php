@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Datum | CRM Admin Dashboard Template</title>
+    <title>Admin Dashboard</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
     <!-- Library / Plugin Css Build -->
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/customizer.min.css?v=1.0.0') }}">
     <!-- font-awesome css -->
     <link rel="stylesheet" href="{{ asset('assets/vendor/font-awesome/css/all.min.css?v=1.0.0') }}">
-
+  
     <link href="../../css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="../../css2-1?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
@@ -39,7 +39,7 @@
     </div>
 
 
-    <footer class="iq-footer">
+    {{-- <footer class="iq-footer">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6">
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </div>
-    </footer> <!-- Library Bundle Script -->
+    </footer> <!-- Library Bundle Script --> --}}
     <script src="{{ asset('assets/js/core/libs.min.js') }}"></script>
     <script src="{{ asset('assets/js/core/external.min.js') }}"></script>
     <!-- Chart Custom JavaScript -->

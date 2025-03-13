@@ -1,9 +1,9 @@
 <div>
     <div class="iq-sidebar  sidebar-default  ">
-        <div class="iq-sidebar-logo d-flex align-items-end justify-content-between">
+        {{-- <div class="iq-sidebar-logo d-flex align-items-end justify-content-between">
             <a href="index.html" class="header-logo">
-                {{-- <img src="{{ asset('assets/images/logo.png')}}" class="img-fluid rounded-normal " alt="logo"> --}}
-                <span>Datum</span>
+               
+             <span class="text-center">COMESTRO</span> 
             </a>
             <div class="side-menu-bt-sidebar-1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-light wrapper-menu" width="30" fill="none"
@@ -12,11 +12,11 @@
                     </path>
                 </svg>
             </div>
-        </div>
+        </div> --}}
         <div class="data-scrollbar" data-scroll="1">
             <nav class="iq-sidebar-menu">
                 <ul id="iq-sidebar-toggle" class="side-menu">
-                    <li class="active sidebar-layout">
+                    <li class="active sidebar-layout mt-2">
                         <a href="{{ route('admin-dashboard') }}" class="svg-icon">
                             <i class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none"
@@ -85,7 +85,7 @@
                                                 d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4">
                                             </path>
                                         </svg>
-                                    </i><span class="">lead</span>
+                                    </i><span class="">Manage Lead</span>
                                 </a>
                             </li>
 
@@ -422,9 +422,24 @@
                             </li>
                         </ul>
                     </li>
+                 
+                    <li class="sidebar-layout">
+                        <a href="#app10" class="collapsed svg-icon" data-bs-toggle="collapse" aria-expanded="false">
+                                
+                                <livewire:auth.logout/>
+                        
+                        </a>
+                       
+                    </li>
+                   
+                
+                   
+                   
+                    
                     
             </nav>
             <div class="pt-5 pb-5"></div>
         </div>
     </div>
+    
 </div>
