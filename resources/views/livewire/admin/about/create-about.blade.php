@@ -11,7 +11,7 @@
                                 <li class="breadcrumb-item active">Create New About</li>
                             </ol>
                         </nav>
-                        <a href="#" class="btn btn-primary btn-sm">
+                        <a href="{{route('admin.about.manage-about')}}" class="btn btn-primary btn-sm">
                             <span class="ms-2">Back</span>
                         </a>
                     </div>
