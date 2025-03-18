@@ -86,88 +86,8 @@
 
 
 
+
 {{-- <div class="max-w-6xl mx-auto px-4 py-12">
-    <div class="max-w-2xl mx-auto text-center px-8 mt-12">
-        <h3 class="text-sm uppercase tracking-widest text-gray-500">T E A M</h3>
-        <h2 class="text-3xl font-bold text-gray-900 mt-2">Our Teams</h2>
-        <p class="text-gray-500 mt-4">
-            Explore the innovative projects our talented teams have created, showcasing their expertise in web and app development.
-        </p>
-    </div>
-
-      <div class="relative mt-10">
-        <div class="absolute w-1 bg-[#0D3C4B] h-full left-1/2 transform -translate-x-1/2"></div>
-          <div class="relative flex items-center mb-12"> 
-            <div class="w-1/2 pr-8 text-right">
-                <a href="https://ptpinstitute.com/" class="text-lg font-semibold text-gray-800">Team Alpha - Project PtPi</a>
-
-                <p class="text-sm text-gray-500 mt-2">March 15, 2023 - Lead: Archana • 5 Members</p>
-                <p class="text-gray-600 mt-4 text-sm">
-                    Team Alpha developed "school," We provide qualified teachers committed to shaping a brighter future for your students. Login today and connect with our expert educators
-                </p>
-            </div>
-             <div class=" w-1/2 pl-8 ">
-                <img src="{{ asset('home/p1.png') }}" alt="" class="w-full h-48 object-cover rounded-lg shadow-md">
-            </div> 
-            
-            
-          
-            <div class="absolute w-8 h-8 left-1/2 transform -translate-x-1/2 z-10">
-                <img src="https://th.bing.com/th/id/OIP.vbBofphzBR6asenSaAmw8QHaHa?w=197&h=197&c=7&r=0&o=5&pid=1.7"
-                     alt="Team Gamma Icon" 
-                     class="w-full h-full object-cover rounded-full border-2 border-gray-900">
-            </div>
-        </div> 
-        
-
-        <div class="relative flex items-center mb-12 flex-row-reverse">
-            <div class="w-1/2 pl-8 text-left">
-                <a href="https://learnsyntax.com/" class="text-lg font-semibold text-gray-800 cursor-pointer">Team Beta - Project LearnSyntax</a>
-
-                <p class="text-sm text-gray-500 mt-2">August 22, 2023 - Lead: Sadique • 4 Members</p>
-                <p class="text-gray-600 mt-4 text-sm">
-                    Team Beta crafted "Learning," Dive into a space where creativity meets innovation. Learn, build, and transform ideas into impactful solutions through hands-on experience and expert guidance.
-                </p>
-            </div>
-            <div class="w-1/2 pr-8">
-                <img src="{{ asset('home/l1.png') }}" alt="" class="w-full h-48 object-cover rounded-lg shadow-md">
-            </div>
-            <div class="absolute w-8 h-8 left-1/2 transform -translate-x-1/2 z-10">
-                <img src="{{ asset('home/projects/learn.png') }}" alt="Team Beta Icon" class="w-full h-full object-cover rounded-full border-2 border-gray-900">
-            </div>
-            
-            
-        </div> 
-         
-       
-        <div class="relative flex items-center mb-12">
-            <div class="w-1/2 pr-8 text-right">
-                 <a href="https://smartstudiocreation.com/" class="text-lg font-semibold text-gray-800 cursor-pointer">Team Gamma - Project SmartStudio</a> 
-                
-                <p class="text-sm text-gray-500 mt-2">January 10, 2024 - Lead: Sarita • 6 Members</p>
-                <p class="text-gray-600 mt-4 text-sm">
-                    Team Gamma built "professional," Explore the beauty captured through the lens. Dive into a world of moments and memories preserved forever.
-                </p>
-            </div>
-            <div class="w-1/2 pl-8">
-                <img src="{{ asset('home/Smart.png') }}" alt="" class="w-full h-48 object-cover rounded-lg shadow-md">
-            </div>
-         
-            <div class="absolute w-8 h-8 left-1/2 transform -translate-x-1/2 z-10">
-                <img src="https://th.bing.com/th/id/OIP.xgpkc6kouXD4WGAgRsOtYgHaE8?w=301&h=200&c=7&r=0&o=5&pid=1.7" 
-                     alt="Team Gamma Icon" 
-                     class="w-full h-full object-cover rounded-full border-2 border-gray-900">
-            </div>
-            
-        </div>
-      
-    </div>  
-   
-    
-    
-</div> --}}
-
-<div class="max-w-6xl mx-auto px-4 py-12">
     <div class="max-w-2xl mx-auto text-center px-8 mt-8">
         <h3 class="text-sm uppercase tracking-widest text-gray-500 font-semibold">P R O J E C T</h3>
         <h2 class="text-3xl font-bold text-gray-900 mt-2">Our Project</h2>
@@ -235,8 +155,53 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
+
 <div class="max-w-6xl mx-auto px-4 py-12">
+    <div class="max-w-2xl mx-auto text-center px-8 mt-8">
+        <h3 class="text-sm uppercase tracking-widest text-gray-500 font-semibold">P R O J E C T</h3>
+        <h2 class="text-3xl font-bold text-gray-900 mt-2">Our Project</h2>
+        <p class="text-gray-500 mt-4">
+            Discover the innovative projects our talented teams have crafted, showcasing their expertise in web and app development.
+        </p>
+    </div>
+
+    <div class="relative mt-20">
+        <div class="absolute w-1 bg-[#0D3C4B] h-full left-1/2 transform -translate-x-1/2 hidden md:block"></div>
+
+        @foreach($abouts as $index => $about)
+            <div class="relative flex flex-col {{ $index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse' }} items-center mb-12">
+                <div class="w-full md:w-1/2 {{ $index % 2 === 0 ? 'md:pr-8 text-center md:text-right' : 'md:pl-8 text-center md:text-left' }}">
+                    <a href="{{ $about->url }}" class="text-lg font-semibold text-gray-800 cursor-pointer">
+                        {{ $about->team }} - {{ $about->name }}
+                    </a>
+                    <p class="text-sm text-gray-500 mt-2">
+                        {{ \Carbon\Carbon::parse($about->date)->format('F d, Y') }} - 
+                        Lead: {{ $about->lead }} • {{ $about->members }} Members
+                    </p>
+                    <p class="text-gray-600 mt-4 text-sm">
+                        {{ $about->description }}
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2 mt-4 md:mt-0 {{ $index % 2 === 0 ? 'md:pl-8' : 'md:pr-8' }}">
+                    <img src="{{ Storage::url($about->image) }}" 
+                         alt="{{ $about->team }} Project" 
+                         class="w-full h-48 object-cover rounded-lg shadow-md">
+                </div>
+                <div class="absolute w-8 h-8 left-1/2 transform -translate-x-1/2 z-10 hidden md:block">
+                    <img src="{{ Storage::url($about->icon) }}" 
+                         alt="{{ $about->team }} Icon" 
+                         class="w-full h-full object-cover rounded-full border-2 border-gray-900">
+                </div>
+            </div>
+        @endforeach
+    </div>
+</div>
+
+
+
+
+{{-- <div class="max-w-6xl mx-auto px-4 py-12">
     <!-- Header Section -->
     <div class="max-w-2xl mx-auto text-center px-8 mt-12">
         <h3 class="text-sm uppercase tracking-widest text-gray-500 font-semibold">T E A M</h3>
@@ -292,7 +257,76 @@
             <div class="absolute w-4 h-4 left-1/2 transform -translate-x-1/2 z-10 bg-[#0D3C4B] rounded-full hidden md:block"></div>
         </div>
     </div>
-</div>
+</div> --}}
+<div class="max-w-6xl mx-auto px-4 py-12">
+    
+    <div class="max-w-2xl mx-auto text-center px-8 mt-5">
+      <h3 class="text-sm uppercase tracking-widest text-gray-500 font-semibold">T E A M</h3>
+      <h2 class="text-3xl font-bold text-gray-900 mt-2">Our Teams</h2>
+      <p class="text-gray-600 mt-4 text-lg">
+        Discover the innovative projects our talented teams have crafted, showcasing their expertise in web and app development.
+      </p>
+    </div>
+  
+    
+    <div class="mt-10 swiper w-full">
+      <div class="swiper-wrapper">
+        <!-- Team Member 1 -->
+        <div class="swiper-slide w-72 bg-white p-6 text-center">
+          <img src="https://media.licdn.com/dms/image/v2/D4D03AQGV_SFZcfjv0Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1727617914678?e=1747267200&v=beta&t=HKGvtwMXAAAmvceYiVnmCODz9YJ5XheOZ6af_O5J7aQ" alt="Sarita Yadav" class="w-32 h-32 mx-auto object-cover rounded-full shadow-md">
+          <h4 class="text-xl font-bold text-gray-900 mt-4">Sarita Yadav</h4>
+          <p class="text-gray-600 mt-2">Team Leader</p>
+        </div>
+  
+        <!-- Team Member 2 -->
+        <div class="swiper-slide w-72 bg-white  p-6 text-center">
+          <img src="https://media.licdn.com/dms/image/v2/D5603AQE53zjwbW37Ow/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718827196860?e=1747267200&v=beta&t=aOeV4qQW0tspjQn0IEPQQnv23CKmOG_pkItgTnGSD3I" alt="Archana Kumari" class="w-32 h-32 mx-auto object-cover rounded-full shadow-md">
+          <h4 class="text-xl font-bold text-gray-900 mt-4">Archana Kumari</h4>
+          <p class="text-gray-600 mt-2">Project Manager</p>
+        </div>
+  
+        <!-- Team Member 3 -->
+        <div class="swiper-slide w-72 bg-white  p-6 text-center">
+          <img src="https://media.licdn.com/dms/image/v2/D5603AQHnthy9MsUF7w/profile-displayphoto-shrink_100_100/B56ZSwiydGHQAY-/0/1738128699150?e=1747267200&v=beta&t=Vi_scRXth4ZUW687SBHeLpKV4Fmc9dgb5S6pCeWjiGE" alt="Roni Saha" class="w-32 h-32 mx-auto object-cover rounded-full shadow-md">
+          <h4 class="text-xl font-bold text-gray-900 mt-4">Roni Saha</h4>
+          <p class="text-gray-600 mt-2">Tester</p>
+        </div>
+      </div>
+
+      <div class="swiper-button-next text-[#ea281a]"></div>
+      <div class="swiper-button-prev text-[#ea281a]"></div> 
+     
+      <div class="swiper-pagination mt-5"></div>
+    </div>
+    <div class="py-10"></div>
+  </div>
+  
+  <style>
+    .swiper-button-next,
+    .swiper-button-prev {
+      color:#ea281a; 
+    }
+  
+    .swiper-pagination-bullet {
+      background: #ea281a;
+    }
+  </style>
+  
+  <script>
+    new Swiper('.swiper', {
+      slidesPerView: 'auto',
+      spaceBetween: 24,
+      centeredSlides: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 
 </div>
 </div>
