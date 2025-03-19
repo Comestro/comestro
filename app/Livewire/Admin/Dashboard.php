@@ -9,7 +9,7 @@ use App\Models\Deal;
 use App\Models\Contact;
 use App\Models\Blog; 
 use App\Models\Customer;
-use App\Models\Course;
+use App\Models\Service;
 
 
 class Dashboard extends Component
@@ -23,7 +23,7 @@ class Dashboard extends Component
     public $totalContacts;
     public $blogs;
     public $customers;
-    public $courses;
+    public $services;
 
     public function mount()
     {
@@ -33,7 +33,7 @@ class Dashboard extends Component
         $this->totalContacts = Contact::count();
         $this->blogs = Blog::latest()->take(4)->get();
         $this->customers = Customer::latest()->take(5)->get();
-        $this->courses = Course::latest()->take(5)->get();
+        $this->services = Service::latest()->take(5)->get();
     }
 
     public function render()

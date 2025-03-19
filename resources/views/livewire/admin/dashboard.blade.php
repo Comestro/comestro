@@ -380,7 +380,7 @@
                         <div class="card card-block card-stretch card-height">
                             <div class="card-header d-flex justify-content-between">
                                 <div class="header-title">
-                                    <h4 class="card-title">Recent Courses</h4>
+                                    <h4 class="card-title">Recent Services</h4>
                                 </div>
                             </div>
                             <div class="card-body p-0">
@@ -401,26 +401,26 @@
                                                 <th>
                                                     <svg width="32" height="32" fill="currentColor" class="text-info me-2" viewBox="0 0 16 16">
                                                         <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zM5 12V8h6v4H5zm7-6H4V4h8v2z"/>
-                                                    </svg>Image
+                                                    </svg>Icon
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @forelse ($courses as $course)
+                                            @forelse ($services as $service)
                                             <tr>
-                                                <td>{{ $course->title }}</td>
-                                                <td>{{ Str::limit($course->description, 20) }}</td>
+                                                <td>{{ $service->title }}</td>
+                                                <td>{{ Str::limit($service->description, 20) }}</td>
                                                 <td>
-                                                    @if ($course->image)
-                                                        <img src="{{ Storage::url($course->image) }}" alt="{{ $course->title }}" style="width: 50px; height: 50px; object-fit: cover;">
+                                                    @if ($service->icon)
+                                                        <img src="{{ Storage::url($service->icon) }}" alt="{{ $service->title }}" style="width: 50px; height: 50px; object-fit: cover;">
                                                     @else
-                                                        No Image
+                                                        No Icon
                                                     @endif
                                                 </td>
                                             </tr>
                                             @empty
                                             <tr>
-                                                <td colspan="3" class="text-center">No courses found</td>
+                                                <td colspan="3" class="text-center">No services found</td>
                                             </tr>
                                             @endforelse
                                         </tbody>
