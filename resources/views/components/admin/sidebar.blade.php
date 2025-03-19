@@ -279,6 +279,44 @@
                         </ul>
                     </li>
                     <li class="sidebar-layout">
+                        <a href="#services" class="collapsed svg-icon" data-bs-toggle="collapse" aria-expanded="false">
+                            <i>
+                                <!-- SVG for Services (e.g., a "tools" icon symbolizing service) -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.83-5.83M11.42 15.17l2.83-2.83m0 0L21 5.66A2.652 2.652 0 0017.25 2l-6.58 6.58m0 0L5 11.42a2.652 2.652 0 000 3.75l1.41 1.41a2.652 2.652 0 003.75 0l1.26-1.41z" />
+                                </svg>
+                            </i>
+                            <span class="ms-2">Services</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon iq-arrow-right arrow-active" width="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                        <ul id="services" class="submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li class="sidebar-layout">
+                                <a href="{{ route('admin.service.create') }}" class="svg-icon">
+                                    <i>
+                                      
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                                        </svg>
+                                    </i>
+                                    <span class="">Add Service</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-layout">
+                                <a href="{{route('admin.service.manage-service')}}" class="svg-icon">
+                                    <i>
+                                        <!-- SVG for Manage Services (e.g., a "list" icon) -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                                        </svg>
+                                    </i>
+                                    <span class="">Manage Services</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-layout">
                         <a href="#app7" class="collapsed svg-icon" data-bs-toggle="collapse" aria-expanded="false">
                             <i>
                              
