@@ -201,132 +201,49 @@
 
 
 
-{{-- <div class="max-w-6xl mx-auto px-4 py-12">
-    <!-- Header Section -->
+
+
+<div class="max-w-6xl mx-auto px-4 py-12">
+   
     <div class="max-w-2xl mx-auto text-center px-8 mt-12">
         <h3 class="text-sm uppercase tracking-widest text-gray-500 font-semibold">T E A M</h3>
         <h2 class="text-3xl font-bold text-gray-900 mt-2">Our Teams</h2>
-         <p class="text-gray-600 mt-4 text-lg">
+        <p class="text-gray-600 mt-4 text-lg">
             Discover the innovative projects our talented teams have crafted, showcasing their expertise in web and app development.
-        </p> 
+        </p>
+    </div>
+
+   
+    <div class="mt-10 overflow-x-auto flex space-x-6 pb-4 snap-x snap-mandatory">
+        @forelse ($teams as $team)
+            <div class="bg-white overflow-hidden w-72 flex-shrink-0 snap-center transform transition duration-300 hover:scale-105">
+                <img 
+                    src="{{ $team->image ? Storage::url($team->image) : 'https://via.placeholder.com/288x192' }}" 
+                    alt="{{ $team->name }}" 
+                    class="w-full h-64 object-cover"
+                >
+                <div class="p-6 text-center">
+                    <h4 class="text-xl font-bold text-gray-900">{{ $team->name }}</h4>
+                    <p class="text-gray-600 mt-2">{{ $team->role }}</p>
+                </div>
+            </div>
+        @empty
+            <div class="w-full text-center py-4">
+                <p class="text-gray-600">No team members found.</p>
+            </div>
+        @endforelse
+    </div>
     
-    </div>
-
-
-    <div class="relative mt-10">
-        <div class="absolute w-1 bg-[#0D3C4B] h-full left-1/2 transform -translate-x-1/2 hidden md:block"></div>
-
-      
-        <div class="relative flex flex-col md:flex-row items-center mb-12">
-            <div class="w-full md:w-1/2 md:pr-8 text-center md:text-right">
-                <h4 class="text-xl font-bold text-gray-900">Sarita Yadav</h4>
-                <p class="text-gray-600 mt-2">
-                   Team Leader
-                </p>
-            </div>
-            <div class="w-full md:w-1/2 mt-4 md:mt-0 flex justify-center md:justify-start">
-                <img src="https://media.licdn.com/dms/image/v2/D4D03AQGV_SFZcfjv0Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1727617914678?e=1747267200&v=beta&t=HKGvtwMXAAAmvceYiVnmCODz9YJ5XheOZ6af_O5J7aQ" alt="Comestro Logo" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-lg">
-            </div>
-            <div class="absolute w-4 h-4 left-1/2 transform -translate-x-1/2 z-10 bg-[#0D3C4B] rounded-full hidden md:block"></div>
-        </div>
-
-       
-        <div class="relative flex flex-col md:flex-row-reverse items-center mb-12">
-            <div class="w-full md:w-1/2 md:pl-8 text-center md:text-left">
-                <h4 class="text-xl font-bold text-gray-900">Archana Kumari</h4>
-                <p class="text-gray-600 mt-2">
-                   Project Manager
-                </p>
-            </div>
-            <div class="w-full md:w-1/2 mt-4 md:mt-0 flex justify-center md:justify-end">
-                <img src="https://media.licdn.com/dms/image/v2/D5603AQE53zjwbW37Ow/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718827196860?e=1747267200&v=beta&t=aOeV4qQW0tspjQn0IEPQQnv23CKmOG_pkItgTnGSD3I" alt="Tech Innovate Logo" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-lg">
-            </div>
-            <div class="absolute w-4 h-4 left-1/2 transform -translate-x-1/2 z-10 bg-[#0D3C4B] rounded-full hidden md:block"></div>
-        </div>
-
-        <div class="relative flex flex-col md:flex-row items-center mb-12">
-            <div class="w-full md:w-1/2 md:pr-8 text-center md:text-right">
-                <h4 class="text-xl font-bold text-gray-900">Roni Saha</h4>
-                <p class="text-gray-600 mt-2">
-                  Teaster
-                </p>
-            </div>
-            <div class="w-full md:w-1/2 mt-4 md:mt-0 flex justify-center md:justify-start">
-                <img src="https://media.licdn.com/dms/image/v2/D5603AQHnthy9MsUF7w/profile-displayphoto-shrink_100_100/B56ZSwiydGHQAY-/0/1738128699150?e=1747267200&v=beta&t=Vi_scRXth4ZUW687SBHeLpKV4Fmc9dgb5S6pCeWjiGE" alt="Creative Solutions Logo" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full shadow-lg">
-            </div>
-            <div class="absolute w-4 h-4 left-1/2 transform -translate-x-1/2 z-10 bg-[#0D3C4B] rounded-full hidden md:block"></div>
-        </div>
-    </div>
-</div> --}}
-<div class="max-w-6xl mx-auto px-4 py-12">
-    
-    <div class="max-w-2xl mx-auto text-center px-8 mt-5">
-      <h3 class="text-sm uppercase tracking-widest text-gray-500 font-semibold">T E A M</h3>
-      <h2 class="text-3xl font-bold text-gray-900 mt-2">Our Teams</h2>
-      <p class="text-gray-600 mt-4 text-lg">
-        Discover the innovative projects our talented teams have crafted, showcasing their expertise in web and app development.
-      </p>
-    </div>
-  
-    
-    <div class="mt-10 swiper w-full">
-      <div class="swiper-wrapper">
-        <!-- Team Member 1 -->
-        <div class="swiper-slide w-72 bg-white p-6 text-center">
-          <img src="https://media.licdn.com/dms/image/v2/D4D03AQGV_SFZcfjv0Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1727617914678?e=1747267200&v=beta&t=HKGvtwMXAAAmvceYiVnmCODz9YJ5XheOZ6af_O5J7aQ" alt="Sarita Yadav" class="w-32 h-32 mx-auto object-cover rounded-full shadow-md">
-          <h4 class="text-xl font-bold text-gray-900 mt-4">Sarita Yadav</h4>
-          <p class="text-gray-600 mt-2">Team Leader</p>
-        </div>
-  
-        <!-- Team Member 2 -->
-        <div class="swiper-slide w-72 bg-white  p-6 text-center">
-          <img src="https://media.licdn.com/dms/image/v2/D5603AQE53zjwbW37Ow/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718827196860?e=1747267200&v=beta&t=aOeV4qQW0tspjQn0IEPQQnv23CKmOG_pkItgTnGSD3I" alt="Archana Kumari" class="w-32 h-32 mx-auto object-cover rounded-full shadow-md">
-          <h4 class="text-xl font-bold text-gray-900 mt-4">Archana Kumari</h4>
-          <p class="text-gray-600 mt-2">Project Manager</p>
-        </div>
-  
-        <!-- Team Member 3 -->
-        <div class="swiper-slide w-72 bg-white  p-6 text-center">
-          <img src="https://media.licdn.com/dms/image/v2/D5603AQHnthy9MsUF7w/profile-displayphoto-shrink_100_100/B56ZSwiydGHQAY-/0/1738128699150?e=1747267200&v=beta&t=Vi_scRXth4ZUW687SBHeLpKV4Fmc9dgb5S6pCeWjiGE" alt="Roni Saha" class="w-32 h-32 mx-auto object-cover rounded-full shadow-md">
-          <h4 class="text-xl font-bold text-gray-900 mt-4">Roni Saha</h4>
-          <p class="text-gray-600 mt-2">Tester</p>
-        </div>
-      </div>
-
-      <div class="swiper-button-next text-[#ea281a]"></div>
-      <div class="swiper-button-prev text-[#ea281a]"></div> 
-     
-      <div class="swiper-pagination mt-5"></div>
-    </div>
-    <div class="py-10"></div>
-  </div>
-  
-  <style>
-    .swiper-button-next,
-    .swiper-button-prev {
-      color:#ea281a; 
-    }
-  
-    .swiper-pagination-bullet {
-      background: #ea281a;
-    }
-  </style>
-  
-  <script>
-    new Swiper('.swiper', {
-      slidesPerView: 'auto',
-      spaceBetween: 24,
-      centeredSlides: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  </script>
-
+    <style>
+        .overflow-x-auto::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .overflow-x-auto {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</div>
 </div>
 </div>
