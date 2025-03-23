@@ -121,7 +121,7 @@
                     <div>
                         <div class="flex justify-between items-center mb-2">
                             <label class="block text-sm font-medium text-gray-700">Password</label>
-                            <a href="auth-recover-pwd.html" class="text-sm text-blue-600 hover:text-blue-800 transition-colors">Forgot Password?</a>
+                            {{-- <a href="auth-recover-pwd.html" class="text-sm text-blue-600 hover:text-blue-800 transition-colors">Forgot Password?</a> --}}
                         </div>
                         <input 
                             class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-400" 
