@@ -58,7 +58,7 @@ namespace App\Livewire\Admin\About;
                 'lead' => 'required|string|max:255',
                 'members' => 'required|integer',
                 'description' => 'required|string',
-                'image' => 'nullable|image|max:1024', 
+                'image' => 'nullable|image|max:2048', 
                 'icon' => 'nullable|image|max:1024',  
             ]);
     
