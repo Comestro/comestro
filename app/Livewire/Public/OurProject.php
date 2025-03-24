@@ -11,7 +11,8 @@ class OurProject extends Component
 
     public function mount()
     {
-        $this->works = Work::all();
+        $this->works = Work::latest()->take(3)->get();  
+       
     }
 
     public function render()
