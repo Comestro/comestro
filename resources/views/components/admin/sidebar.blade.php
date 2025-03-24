@@ -456,13 +456,51 @@
                             </li>
                         </ul>
                     </li>
-
+                    <li class="sidebar-layout">
+                        <a href="#works" class="collapsed svg-icon" data-bs-toggle="collapse" aria-expanded="false">
+                            <i>
+                                <!-- SVG for Works (e.g., a "briefcase" icon symbolizing projects/work) -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </i>
+                            <span class="ms-2">Works</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon iq-arrow-right arrow-active" width="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                        <ul id="works" class="submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li class="sidebar-layout">
+                                <a href="{{ route('admin.work.create') }}" class="svg-icon">
+                                    <i>
+                                       
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                                        </svg>
+                                    </i>
+                                    <span class="">Add Work</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-layout">
+                                <a href="" class="svg-icon">
+                                    <i>
+                                     
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                                        </svg>
+                                    </i>
+                                    <span class="">Manage Works</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="sidebar-layout">
                         <a href="#app10" class="collapsed svg-icon" data-bs-toggle="collapse" aria-expanded="false">
                            
                             <livewire:auth.logout/>
                         </a>
                     </li>
+                   
                 </ul>
             </nav>
             <div class="pt-5 pb-5"></div>

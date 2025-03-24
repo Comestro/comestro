@@ -4,6 +4,7 @@ use App\Livewire\Admin\Account\AddAccount;
 use App\Livewire\Admin\Account\ManageAccount;
 use App\Livewire\Admin\AddLead;
 use App\Livewire\Admin\Blog\CreateBlog;
+use App\Livewire\Admin\Work\CreateWork;
 use App\Livewire\Admin\Team\CreateTeam;
 use App\Livewire\Admin\Team\ManageTeam;
 use App\Livewire\Admin\About\CreateAbout;
@@ -92,6 +93,7 @@ Route::middleware(['middleware' => 'auth'])->group(function(){
   Route::get('/admin/service/manage-service', ManageService::class)->name('admin.service.manage-service');
   Route::get('/admin/team', CreateTeam::class)->name('admin.team.create');
   Route::get('/admin/team/manage-team', ManageTeam::class)->name('admin.team.manage-team');
+  Route::get('/admin/work', CreateWork::class)->name('admin.work.create');
  
 });
 // Route::get('/admin-dashboard',Dashboard::class)->name('admin-dashboard');
