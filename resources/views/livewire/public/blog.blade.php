@@ -156,7 +156,7 @@
           </div>
       </section>
   </div> --}}
-  <livewire:public.comment-section />
+  {{-- <livewire:public.comment-section /> --}}
 
 </div>
 </div>
