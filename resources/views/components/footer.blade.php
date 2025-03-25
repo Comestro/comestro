@@ -10,8 +10,16 @@
                     <img src="{{ asset('home/comestro.png') }}"  class="inline-block h-8 mr-2">
                   </h2>
                 <p class="text-gray-400 mt-2">Delivering projects at lightning speed with expert developers.</p>
-                <p class="text-red-500 text-2xl font-semibold mt-4"> (+91) 95-46-80-55-80</p>
-                <p class="text-gray-400">contact@comestro.com</p>
+          
+                <div class="mt-4 flex flex-col space-y-1">
+                    <a href="tel:+919546805580" class="text-red-500 text-2xl font-semibold  hover:underline">
+                        📞 +91 9546805580
+                    </a>
+                    <a href="mailto:comestrotechlabs@gmail.com" class="text-white hover:underline">
+                        ✉️ comestrotechlabs@gmail.com
+                    </a>
+                </div>
+                
             </div>
 
             <!-- Services -->
