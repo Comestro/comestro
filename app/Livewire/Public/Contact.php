@@ -19,12 +19,15 @@ class Contact extends Component
     ];
     public function submit(){
         $this->validate();
+
         Setting::create([
             'name' => $this->name,
             'email' => $this->email,
             'message' => $this->message,
         ]);
+
         session()->flash('message','Your message has been sent successfully');
+        
         $this->reset(['name','email','message']);
         
     }
