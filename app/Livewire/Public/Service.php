@@ -10,7 +10,7 @@ class Service extends Component
     public function render()
     {
         
-        $services = ServiceModel::all();
+        $services = ServiceModel::take(6)->get();
 
       
         return view('livewire.public.service', [
