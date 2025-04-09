@@ -47,7 +47,7 @@
             </div>
 
             <!-- Subscription Form -->
-            <div>
+            {{-- <div>
                 <h3 class="text-lg font-semibold">STAY UPDATED</h3>
                 <p class="text-gray-400 mt-2">Get the latest insights and exclusive offers.</p>
                 <div class="flex mt-4">
@@ -55,7 +55,8 @@
                         class="bg-gray-800 text-white px-4 py-2 w-full outline-none rounded-l-md focus:ring-2 focus:ring-red-500" />
                     <button class="bg-red-500 text-white px-4 rounded-r-md hover:bg-red-600 transition">SUBSCRIBE</button>
                 </div>
-            </div>
+            </div> --}}
+            <livewire:public.subscription />
         </div>
 
         <!-- Bottom Section -->
