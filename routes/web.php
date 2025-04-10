@@ -97,7 +97,7 @@ Route::middleware(['middleware' => 'auth'])->group(function(){
   Route::get('/admin/team/manage-team', ManageTeam::class)->name('admin.team.manage-team');
   Route::get('/admin/work', CreateWork::class)->name('admin.work.create');
   Route::get('/admin/work/manage-work', ManageWork::class)->name('admin.work.manage-work');
-  Route::get('/admin/subscribe/manage-subscribe', ManageSubscribe::class)->name('admin.subscribe.manage-subscribe');
+  Route::get('/admin/subscribes', ManageSubscribe::class)->name('admin.subscribes');
  
 });
 // Route::get('/admin-dashboard',Dashboard::class)->name('admin-dashboard');
