@@ -202,6 +202,7 @@
                             </li>
                         </ul>
                     </li>
+                
 
                     <li class="sidebar-layout">
                         <a href="#app6" class="collapsed svg-icon" data-bs-toggle="collapse" aria-expanded="false">
@@ -494,6 +495,33 @@
                             </li>
                         </ul>
                     </li>
+                
+
+<li class="sidebar-layout">
+    <a href="#subscribeMenu" class="collapsed svg-icon" data-bs-toggle="collapse" aria-expanded="false">
+        <i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+        </i>
+        <span class="ms-2">Subscribe</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon iq-arrow-right arrow-active" width="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+    </a>
+    <ul id="subscribeMenu" class="submenu collapse" data-parent="#iq-sidebar-toggle">
+        <li class="sidebar-layout">
+            <a href="{{ route('admin.subscribes') }}" class="svg-icon">
+                <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                </i>
+                <span class="">Manage Subscribe</span>
+            </a>
+        </li>
+    </ul>
+</li>
                     <li class="sidebar-layout">
                         <a href="#app10" class="collapsed svg-icon" data-bs-toggle="collapse" aria-expanded="false">
                            
