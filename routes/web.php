@@ -28,6 +28,7 @@ use App\Livewire\Admin\Lead\LeadInformation;
 use App\Livewire\Admin\Lead\LeadView;
 use App\Livewire\Admin\Lead\ManageLead;
 use App\Livewire\Admin\Work\ManageWork;
+use App\Livewire\Admin\Subscribe\ManageSubscribe;
 use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Logout;
 use App\Livewire\Public\Home;
@@ -96,6 +97,7 @@ Route::middleware(['middleware' => 'auth'])->group(function(){
   Route::get('/admin/team/manage-team', ManageTeam::class)->name('admin.team.manage-team');
   Route::get('/admin/work', CreateWork::class)->name('admin.work.create');
   Route::get('/admin/work/manage-work', ManageWork::class)->name('admin.work.manage-work');
+  Route::get('/admin/subscribe/manage-subscribe', ManageSubscribe::class)->name('admin.subscribe.manage-subscribe');
  
 });
 // Route::get('/admin-dashboard',Dashboard::class)->name('admin-dashboard');
