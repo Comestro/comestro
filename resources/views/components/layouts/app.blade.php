@@ -6,6 +6,7 @@
 
         <title>{{ $title ?? 'Comestro' }}</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <meta name="google-site-verification" content="DkleUeBS1mAeoEHSPAJVMjLUTh4FhN7kmNnw4csflyY" />
         <link rel="shortcut icon" href="{{ asset('home/com.png') }}">
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
