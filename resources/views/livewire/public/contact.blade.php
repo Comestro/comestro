@@ -77,13 +77,11 @@
                             </div>
                         </div>
                         
-                        
-
                         <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
                             <h3 class="text-2xl font-semibold mb-6">Our Location</h3>
                             <div class="w-full h-64 rounded-lg overflow-hidden">
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28784.500019726094!2d87.46488199140625!3d25.785414299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39efff8324c4f35f%3A0x15a1dfb0863feae2!2sPurnea%2C%20Bihar%2C%20India!5e0!3m2!1sen!2sin!4v1698850000000!5m2!1sen!2sin"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.267766446744!2d87.47512331503675!3d25.779418983627896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39efff8324c4f35f%3A0x15a1dfb0863feae2!2sThana%20Chowk%2C%20Purnea%2C%20Bihar%20854304%2C%20India!5e0!3m2!1sen!2sin!4v1698850000000!5m2!1sen!2sin"
                                     width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
                                 </iframe>
                             </div>
