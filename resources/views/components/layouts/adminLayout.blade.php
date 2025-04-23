@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Admin Dashboard</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('home/com.png') }}">
+    <link rel="shortcut icon" href="{{ asset('home/logo c.jpg') }}">
     <!-- Library / Plugin Css Build -->
     <link rel="stylesheet" href="{{ asset('assets/css/core/libs.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/datum.min.css?v=1.0.0') }}">
