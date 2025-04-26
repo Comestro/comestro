@@ -13,16 +13,16 @@
 
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex items-center space-x-8">
-                <a href="{{route('home')}}" class="text-blue-600 font-medium hover:text-blue-700 transition-colors">Home</a>
-                <a href="{{route('about')}}" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">About Us</a>
-                <a href="{{route('service')}}" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Services</a>
-                <a href="{{route('blog')}}" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Blog</a>
-                <a href="{{route('contact')}}" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors font-medium">Contact</a>
+                <a href="{{route('home')}}" class="text-[#0071bc] font-medium hover:text-[#004f84] transition-colors">Home</a>
+                <a href="{{route('about')}}" class="text-gray-600 hover:text-[#f15a24] transition-colors font-medium">About Us</a>
+                <a href="{{route('service')}}" class="text-gray-600 hover:text-[#f15a24] transition-colors font-medium">Services</a>
+                <a href="{{route('blog')}}" class="text-gray-600 hover:text-[#f15a24] transition-colors font-medium">Blog</a>
+                <a href="{{route('contact')}}" class="bg-[#f15a24] text-white px-6 py-2 rounded-full hover:bg-[#e04d1a] transition-colors font-medium">Contact</a>
             </nav>
 
             <!-- Mobile Menu Button -->
             <button @click="open = !open" class="md:hidden focus:outline-none p-2 rounded-lg hover:bg-gray-100">
-                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-6 h-6 text-[#0071bc]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path x-show="!open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
@@ -40,11 +40,11 @@
              @click.away="open = false" 
              class="md:hidden absolute left-0 top-full w-full bg-white shadow-xl rounded-b-2xl border-t">
             <div class="flex flex-col space-y-4 p-6">
-                <a href="{{route('home')}}" class="text-blue-600 font-medium hover:bg-blue-50 p-2 rounded-lg transition-colors">Home</a>
-                <a href="{{route('about')}}" class="text-gray-600 hover:bg-blue-50 p-2 rounded-lg transition-colors">About Us</a>
-                <a href="{{route('service')}}" class="text-gray-600 hover:bg-blue-50 p-2 rounded-lg transition-colors">Services</a>
-                <a href="{{route('blog')}}" class="text-gray-600 hover:bg-blue-50 p-2 rounded-lg transition-colors">Blog</a>
-                <a href="{{route('contact')}}" class="bg-blue-600 text-white p-2 rounded-lg text-center hover:bg-blue-700 transition-colors">Contact</a>
+                <a href="{{route('home')}}" class="text-[#0071bc] font-medium hover:bg-[#0071bc]/5 p-2 rounded-lg transition-colors">Home</a>
+                <a href="{{route('about')}}" class="text-gray-600 hover:bg-[#f15a24]/5 p-2 rounded-lg transition-colors">About Us</a>
+                <a href="{{route('service')}}" class="text-gray-600 hover:bg-[#f15a24]/5 p-2 rounded-lg transition-colors">Services</a>
+                <a href="{{route('blog')}}" class="text-gray-600 hover:bg-[#f15a24]/5 p-2 rounded-lg transition-colors">Blog</a>
+                <a href="{{route('contact')}}" class="bg-[#f15a24] text-white p-2 rounded-lg text-center hover:bg-[#e04d1a] transition-colors">Contact</a>
             </div>
         </div>
     </header>
