@@ -5,7 +5,7 @@
         :class="scrolled ? 'w-full shadow-md backdrop-blur-sm bg-white/95 duration-300 ease-out' : 'w-full bg-white duration-300 ease-out'"
         class="fixed top-0 left-0 py-4 transition-all z-50"
     >
-        <div class="container mx-auto px-4 md:px-6">
+        <div class="container mx-auto px-4 md:px-20">
             <div class="flex justify-between items-center">
                 <!-- Logo - Simplified -->
                 <a href="{{route('home')}}" class="flex items-center">

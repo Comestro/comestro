@@ -8,7 +8,7 @@
         <div class="absolute left-0 bottom-0 w-64 h-64 bg-[#0071bc] opacity-10 rounded-full -translate-x-1/3 translate-y-1/3"></div>
         
         <!-- Content container -->
-        <div class="container mx-auto px-6 lg:px-8 relative z-10">
+        <div class="container mx-auto px-6 lg:px-20 py-10 relative z-10">
             <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
                 <!-- Text content -->
                 <div class="lg:w-1/2 text-center lg:text-left">
@@ -34,7 +34,7 @@
                 
                 <!-- Hero image -->
                 <div class="lg:w-1/2 flex justify-center">
-                    <div class="relative w-full max-w-4xl mx-auto">
+                    <div class="relative w-full max-w-xl mx-auto">
                         <div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-3xl blur-xl"></div>
                         <svg width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" class="relative z-10">
                           <!-- Background glow -->

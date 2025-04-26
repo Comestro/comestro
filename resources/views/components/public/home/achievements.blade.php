@@ -93,7 +93,7 @@
 
     <!-- Testimonial Strip -->
     <div class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
+        <div class="container mx-auto px-6 md:px-20">
             <div class="flex flex-col md:flex-row items-center justify-between">
                 <div class="mb-6 md:mb-0 md:max-w-xl">
                     <h3 class="text-2xl font-bold text-gray-900 mb-2">Join our growing list of satisfied clients</h3>
