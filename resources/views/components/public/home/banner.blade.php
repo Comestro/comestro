@@ -1,5 +1,5 @@
 <div>
-    <div class="relative bg-gradient-to-r from-[#0071bc] via-[#005a96] to-[#004f84] min-h-[85vh] flex items-center overflow-hidden">
+    <div class="relative bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 min-h-[85vh] flex items-center overflow-hidden">
         <!-- Particles background -->
         <div id="particles-js" class="absolute inset-0"></div>
         
@@ -12,7 +12,7 @@
             <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
                 <!-- Text content -->
                 <div class="lg:w-1/2 text-center lg:text-left">
-                    <h2 class="text-blue-300 font-semibold text-lg mb-3">INNOVATIVE SOLUTIONS</h2>
+                    <h2 class="text-[#f15a24] font-semibold text-lg mb-3">INNOVATIVE SOLUTIONS</h2>
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                         Transforming Ideas Into <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#f15a24] to-[#ff8a00]">Powerful Software</span>
                     </h1>
@@ -33,8 +33,8 @@
                 </div>
                 
                 <!-- Hero image -->
-                <div class="lg:w-1/2 flex justify-center px-4 sm:px-8 py-6 lg:py-0">
-                    <div class="relative w-full max-w-xl mx-auto">
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="relative w-full max-w-4xl mx-auto">
                         <div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-3xl blur-xl"></div>
                         <svg width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" class="relative z-10">
                           <!-- Background glow -->
@@ -229,8 +229,8 @@
             </div>
             
             <!-- Trusted by logos -->
-            <div class="mt-16 pt-8 border-t border-[#0071bc]/50">
-                <p class="text-center text-blue-200 text-sm mb-6">TRUSTED BY INNOVATIVE COMPANIES</p>
+            <div class="mt-16 pt-8 border-t border-gray-700">
+                <p class="text-center text-gray-400 text-sm mb-6">TRUSTED BY INNOVATIVE COMPANIES</p>
                 <div class="flex flex-wrap justify-center gap-x-12 gap-y-6 opacity-70">
                     <!-- Add your client logos here -->
                     <img src="{{ asset('home/client1.svg') }}" alt="Client Logo" class="h-8 w-auto">
@@ -288,7 +288,7 @@
             "line_linked": {
                 "enable": true,
                 "distance": 150,
-                "color": "#0071bc",
+                "color": "#f15a24",
                 "opacity": 0.2,
                 "width": 1
             },

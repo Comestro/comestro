@@ -1,6 +1,6 @@
 <section class="achievements-section relative overflow-hidden">
-    <!-- Header Section - Updated with brand colors -->
-    <div class="relative bg-gradient-to-r from-[#0071bc] to-[#004f84] pt-20 pb-32 text-white">
+    <!-- Header Section - Dark/Slate Background -->
+    <div class="relative bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 pt-20 pb-32 text-white">
         <!-- Abstract Shapes -->
         <div class="absolute inset-0 overflow-hidden">
             <div class="absolute w-96 h-96 rounded-full bg-[#0071bc]/10 -top-20 -right-20"></div>
@@ -19,11 +19,11 @@
         <!-- Content -->
         <div class="container max-w-5xl mx-auto px-6 relative z-10">
             <div class="text-center">
-                <span class="inline-block py-1 px-3 rounded-full bg-[#0071bc]/20 text-blue-300 text-sm font-semibold tracking-wider mb-6">OUR IMPACT</span>
+                <span class="inline-block py-1 px-3 rounded-full bg-[#f15a24]/20 text-[#f15a24] text-sm font-semibold tracking-wider mb-6">OUR IMPACT</span>
                 <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
                     Driving Success Through <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#f15a24] to-[#ff8a00]">Measurable Results</span>
                 </h2>
-                <p class="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
                     We've partnered with businesses across industries to deliver innovative solutions that transform operations and accelerate growth.
                 </p>
             </div>
@@ -126,14 +126,15 @@
     border-radius: 50%;
 }
 
-/* Add some orange particles */
+/* Update particle colors to stand out better against dark background */
+/* Orange particles */
 .particle-1, .particle-3 {
-    background-color: rgba(241, 90, 36, 0.15);
+    background-color: rgba(241, 90, 36, 0.25);
 }
 
-/* Add some blue particles */
+/* Blue particles */
 .particle-2, .particle-4, .particle-5 {
-    background-color: rgba(0, 113, 188, 0.15);
+    background-color: rgba(0, 113, 188, 0.25);
 }
 
 .particle-1 {
