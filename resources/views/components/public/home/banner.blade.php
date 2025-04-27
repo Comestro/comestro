@@ -229,7 +229,7 @@
             </div>
             
             <!-- Trusted by logos -->
-            <div class="mt-16 pt-8 border-t border-gray-700">
+            {{-- <div class="mt-16 pt-8 border-t border-gray-700">
                 <p class="text-center text-gray-400 text-sm mb-6">TRUSTED BY INNOVATIVE COMPANIES</p>
                 <div class="flex flex-wrap justify-center gap-x-12 gap-y-6 opacity-70">
                     <!-- Add your client logos here -->
@@ -238,7 +238,7 @@
                     <img src="{{ asset('home/client3.svg') }}" alt="Client Logo" class="h-8 w-auto">
                     <img src="{{ asset('home/client4.svg') }}" alt="Client Logo" class="h-8 w-auto">
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 
