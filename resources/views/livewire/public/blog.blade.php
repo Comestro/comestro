@@ -13,11 +13,11 @@
             <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
                 <!-- Text content -->
                 <div class="lg:w-1/2 text-center lg:text-left">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-                        We Love to Create <span class="text-[#f15a24]">Our</span> Blogs
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+                      Our Blogs
                     </h1>
                     <p class="text-blue-100 text-lg md:text-xl mb-8 max-w-2xl">
-                        View our blog to see our design and sharing of insights on websites and development.
+                        Dive into our insights on web design, development, and the latest digital trends.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                         <a href="{{ route('contact') }}" 
