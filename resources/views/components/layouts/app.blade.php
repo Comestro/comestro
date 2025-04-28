@@ -39,7 +39,7 @@
       "@type": "Organization",
       "name": "Comestro",
       "url": "https://comestro.com/",
-      "logo": "https://www.comestro.com/assets/home/comestro.png",
+      "logo": "https://www.comestro.com/assets/home/logo c.jpg",
     
       "contactPoint": {
         "@type": "ContactPoint",
