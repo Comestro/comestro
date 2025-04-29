@@ -99,11 +99,13 @@
                 z-index: 1;
             }
         </style>
+        @stack('styles')
 
     </head>
     <body>
         <x-header/>
         {{ $slot }}
         <x-footer/>
+        @stack('scripts')
     </body>
 </html>
