@@ -27,9 +27,8 @@ class Contact extends Component
         ]);
 
         session()->flash('message','Your message has been sent successfully');
-        
-        $this->reset(['name','email','message']);
-        
+        $this->reset('name', 'email', 'message');      
+        $this->redirect('contact');  
     }
     
     public function render()
