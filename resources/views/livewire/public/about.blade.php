@@ -35,120 +35,73 @@
                     <div class="relative w-full max-w-xl mx-auto">
                         <div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-3xl blur-xl"></div>
                         <svg width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" class="relative z-10">
-                            <!-- Background glow -->
+                           
                             <circle cx="400" cy="300" r="250" fill="url(#blue_glow)" opacity="0.15"/>
-                            
-                            <!-- Main device frame -->
-                            <rect x="200" y="150" width="400" height="280" rx="12" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
-                            <rect x="210" y="160" width="380" height="230" rx="4" fill="#0F172A"/>
-                            
-                            <!-- Screen content -->
-                            <rect x="240" y="180" width="320" height="40" rx="4" fill="#334155"/>
-                            <circle cx="260" cy="200" r="10" fill="#3B82F6"/>
-                            <rect x="280" y="195" width="100" height="10" rx="2" fill="#94A3B8"/>
-                            <rect x="480" y="195" width="60" height="10" rx="2" fill="#3B82F6"/>
-                            
-                            <!-- Code blocks -->
-                            <rect x="240" y="240" width="140" height="130" rx="4" fill="#1E293B"/>
-                            <rect x="250" y="250" width="120" height="8" rx="2" fill="#4ADE80" opacity="0.6"/>
-                            <rect x="250" y="265" width="100" height="8" rx="2" fill="#94A3B8" opacity="0.6"/>
-                            <rect x="250" y="280" width="110" height="8" rx="2" fill="#94A3B8" opacity="0.6"/>
-                            <rect x="250" y="295" width="80" height="8" rx="2" fill="#3B82F6" opacity="0.8"/>
-                            <rect x="250" y="310" width="120" height="8" rx="2" fill="#94A3B8" opacity="0.6"/>
-                            <rect x="250" y="325" width="90" height="8" rx="2" fill="#F472B6" opacity="0.6"/>
-                            <rect x="250" y="340" width="110" height="8" rx="2" fill="#94A3B8" opacity="0.6"/>
-                            
-                            <!-- UI components -->
-                            <rect x="400" y="240" width="160" height="60" rx="4" fill="#1E293B"/>
-                            <rect x="410" y="250" width="140" height="10" rx="2" fill="#94A3B8" opacity="0.6"/>
-                            <rect x="410" y="270" width="70" height="20" rx="4" fill="#3B82F6"/>
-                            <rect x="490" y="270" width="50" height="20" rx="4" fill="#1E293B" stroke="#3B82F6" stroke-width="1"/>
-                            
-                            <rect x="400" y="310" width="160" height="60" rx="4" fill="#1E293B"/>
-                            <circle cx="430" cy="340" r="20" fill="url(#circle_gradient)"/>
-                            <rect x="460" y="330" width="90" height="8" rx="2" fill="#94A3B8" opacity="0.6"/>
-                            <rect x="460" y="345" width="60" height="8" rx="2" fill="#94A3B8" opacity="0.6"/>
-                            
-                            <!-- Keyboard -->
-                            <rect x="280" y="445" width="240" height="15" rx="6" fill="#1E293B" stroke="#3B82F6" stroke-width="1"/>
-                            
-                            <!-- Service Labels -->
-                            <g class="service-labels">
-                                <g transform="translate(165, 200)" class="hidden sm:block">
-                                    <rect x="0" y="0" width="120" height="26" rx="13" fill="#3B82F6" opacity="0.9"/>
-                                    <text x="60" y="17" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">SOFTWARE DEV</text>
+                
+                           
+                            <circle cx="400" cy="300" r="150" fill="#0F172A" stroke="#3B82F6" stroke-width="2"/>
+                            <g opacity="0.8">
+                              
+                                <path d="M400 150 A150 150 0 0 1 400 450" fill="none" stroke="#3B82F6" stroke-width="1" stroke-dasharray="4 4"/>
+                                <path d="M250 300 A150 150 0 0 1 550 300" fill="none" stroke="#3B82F6" stroke-width="1" stroke-dasharray="4 4"/>
+                                <path d="M300 200 A150 150 0 0 1 500 400" fill="none" stroke="#3B82F6" stroke-width="1" stroke-dasharray="4 4"/>
+                            </g>
+                
+                          
+                            <g class="service-icons">
+                              
+                                <g transform="translate(200, 100)">
+                                    <rect x="0" y="0" width="60" height="40" rx="4" fill="#1E293B" stroke="#3B82F6" stroke-width="1"/>
+                                    <circle cx="10" cy="10" r="3" fill="#3B82F6"/>
+                                    <rect x="20" y="7" width="30" height="6" rx="2" fill="#94A3B8"/>
+                                    <rect x="5" y="20" width="50" height="15" rx="2" fill="#0F172A"/>
+                                    <path d="M60 20 L 80 20" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 2"/>
+                                    <rect x="80" y="10" width="100" height="20" rx="10" fill="#3B82F6" opacity="0.9"/>
+                                    <text x="130" y="23" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">WEB DESIGN</text>
                                 </g>
-                                <g transform="translate(150, 200)" class="block sm:hidden">
-                                    <rect x="0" y="0" width="90" height="24" rx="12" fill="#3B82F6" opacity="0.9"/>
-                                    <text x="45" y="16" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">SOFTWARE</text>
+                
+                             
+                                <g transform="translate(560, 150)">
+                                    <rect x="0" y="0" width="60" height="40" rx="4" fill="#1E293B" stroke="#3B82F6" stroke-width="1"/>
+                                    <path d="M10 30 L20 20 L30 30" fill="none" stroke="#4ADE80" stroke-width="2"/>
+                                    <path d="M40 30 L50 20 L60 30" fill="none" stroke="#F472B6" stroke-width="2"/>
+                                    <path d="M-20 20 L-40 20" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 2"/>
+                                    <rect x="-160" y="10" width="120" height="20" rx="10" fill="#3B82F6" opacity="0.9"/>
+                                    <text x="-100" y="23" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">SOFTWARE DEV</text>
                                 </g>
-                                <g transform="translate(680, 250)" class="hidden md:block">
-                                    <rect x="0" y="0" width="120" height="26" rx="13" fill="#3B82F6" opacity="0.9"/>
-                                    <text x="60" y="17" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">ANDROID APPS</text>
+                
+                              
+                                <g transform="translate(200, 400)">
+                                    <rect x="0" y="0" width="30" height="50" rx="6" fill="#1E293B" stroke="#3B82F6" stroke-width="1"/>
+                                    <rect x="5" y="5" width="20" height="30" rx="2" fill="#0F172A"/>
+                                    <circle cx="15" cy="42" r="2" fill="#3B82F6"/>
+                                    <path d="M60 25 L80 25" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 2"/>
+                                    <rect x="80" y="15" width="120" height="20" rx="10" fill="#3B82F6" opacity="0.9"/>
+                                    <text x="140" y="28" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">APP DEVELOPMENT</text>
                                 </g>
-                                <g transform="translate(580, 375)" class="hidden sm:block">
-                                    <rect x="0" y="0" width="130" height="26" rx="13" fill="#3B82F6" opacity="0.9"/>
-                                    <text x="65" y="17" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">DATABASE SOLUTIONS</text>
-                                </g>
-                                <g transform="translate(230, 110)" class="hidden sm:block">
-                                    <rect x="0" y="0" width="150" height="26" rx="13" fill="#3B82F6" opacity="0.9"/>
-                                    <text x="75" y="17" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">WEBSITE DEVELOPMENT</text>
-                                </g>
-                                <g transform="translate(400, 420)" class="hidden sm:block">
-                                    <rect x="0" y="0" width="160" height="26" rx="13" fill="#3B82F6" opacity="0.9"/>
-                                    <text x="80" y="17" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">MANAGEMENT SYSTEMS</text>
-                                </g>
-                                <g class="hidden sm:block">
-                                    <path d="M225 200 L 240 240" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 2"/>
-                                    <path d="M680 263 L 640 290" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 2"/>
-                                    <path d="M600 375 L 600 370" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 2"/>
-                                    <path d="M305 110 L 330 150" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 2"/>
-                                    <path d="M480 420 L 430 390" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 2"/>
+                
+                                <g transform="translate(560, 400)">
+                                    <rect x="0" y="0" width="40" height="40" rx="4" fill="#1E293B" stroke="#3B82F6" stroke-width="1"/>
+                                    <path d="M20 10 A15 10 0 0 1 20 20 A15 10 0 0 0 20 30 A15 10 0 0 0 20 20" fill="none" stroke="#3B82F6" stroke-width="2"/>
+                                    <path d="M-20 20 L-40 20" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 2"/>
+                                    <rect x="-160" y="10" width="120" height="20" rx="10" fill="#3B82F6" opacity="0.9"/>
+                                    <text x="-100" y="23" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">DATABASE</text>
                                 </g>
                             </g>
-                            
-                            <!-- Floating elements -->
-                            <g opacity="0.8" class="hidden sm:block">
-                                <path d="M650 180 C680 180 680 150 650 150 C650 120 610 120 610 150 C580 140 580 190 610 180 Z" fill="url(#cloud_gradient)"/>
-                                <path d="M600 180 L 520 210" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 2"/>
-                                <circle cx="520" cy="210" r="5" fill="#3B82F6"/>
-                                <rect x="130" y="220" width="50" height="70" rx="4" fill="#1E293B" stroke="#3B82F6" stroke-width="1"/>
-                                <path d="M145 245 L 157 235 L 165 245 L 157 255 Z" fill="#3B82F6"/>
-                                <path d="M150 260 L 160 260" stroke="#94A3B8" stroke-width="2"/>
-                                <path d="M145 270 L 165 270" stroke="#94A3B8" stroke-width="2"/>
-                                <path d="M180 255 L 240 255" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 2"/>
-                                <rect x="670" y="280" width="60" height="100" rx="8" fill="#1E293B" stroke="#3B82F6" stroke-width="1"/>
-                                <rect x="675" y="290" width="50" height="70" rx="2" fill="#0F172A"/>
-                                <rect x="685" y="300" width="30" height="6" rx="2" fill="#3B82F6" opacity="0.8"/>
-                                <rect x="685" y="312" width="30" height="4" rx="1" fill="#94A3B8" opacity="0.6"/>
-                                <rect x="685" y="320" width="20" height="4" rx="1" fill="#94A3B8" opacity="0.6"/>
-                                <rect x="685" y="340" width="30" height="10" rx="2" fill="#3B82F6"/>
-                                <circle cx="700" cy="375" r="5" fill="#94A3B8"/>
-                                <path d="M670 330 L 600 290" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 2"/>
-                                <circle cx="600" cy="290" r="5" fill="#3B82F6"/>
-                                <circle cx="170" y="380" r="25" fill="none" stroke="#3B82F6" stroke-width="2"/>
-                                <circle cx="170" y="380" r="15" fill="none" stroke="#3B82F6" stroke-width="2"/>
-                                <path d="M170 355 L 170 345" stroke="#3B82F6" stroke-width="2"/>
-                                <path d="M170 415 L 170 405" stroke="#3B82F6" stroke-width="2"/>
-                                <path d="M195 380 L 205 380" stroke="#3B82F6" stroke-width="2"/>
-                                <path d="M135 380 L 145 380" stroke="#3B82F6" stroke-width="2"/>
-                                <path d="M186 364 L 193 357" stroke="#3B82F6" stroke-width="2"/>
-                                <path d="M147 403 L 154 396" stroke="#3B82F6" stroke-width="2"/>
-                                <path d="M186 396 L 193 403" stroke="#3B82F6" stroke-width="2"/>
-                                <path d="M147 357 L 154 364" stroke="#3B82F6" stroke-width="2"/>
-                                <path d="M195 380 L 240 380" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 2"/>
-                                <path d="M650 400 C 690 370, 700 420, 730 400" stroke="#3B82F6" stroke-width="2" fill="none"/>
-                                <circle cx="650" cy="400" r="5" fill="#3B82F6"/>
-                                <circle cx="730" cy="400" r="5" fill="#3B82F6"/>
-                                <path d="M650 400 L 600 370" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 2"/>
-                                <ellipse cx="600" cy="340" rx="25" ry="10" fill="none" stroke="#3B82F6" stroke-width="1"/>
-                                <path d="M575 340 L 575 370" stroke="#3B82F6" stroke-width="1"/>
-                                <path d="M625 340 L 625 370" stroke="#3B82F6" stroke-width="1"/>
-                                <ellipse cx="600" cy="370" rx="25" ry="10" fill="none" stroke="#3B82F6" stroke-width="1"/>
-                                <path d="M575 355 L 500 330" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 2"/>
+                
+                          
+                            <g opacity="0.8">
+                                <path d="M400 150 C 350 200, 450 400, 400 450" fill="none" stroke="#f15a24" stroke-width="3" stroke-dasharray="6 6">
+                                    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="10s" repeatCount="indefinite"/>
+                                </path>
+                                <circle cx="400" cy="150" r="5" fill="#f15a24"/>
+                                <circle cx="400" cy="450" r="5" fill="#f15a24"/>
+                                <circle cx="400" cy="300" r="8" fill="#f15a24">
+                                    <animate attributeName="r" values="8;10;8" dur="3s" repeatCount="indefinite"/>
+                                </circle>
                             </g>
-                            
-                            <!-- Animated pulse circles -->
+                
+                           
                             <circle cx="400" cy="300" r="180" stroke="url(#pulse1)" stroke-width="2" fill="none" opacity="0.3">
                                 <animate attributeName="r" values="180;200;180" dur="6s" repeatCount="indefinite"/>
                                 <animate attributeName="opacity" values="0.3;0.1;0.3" dur="6s" repeatCount="indefinite"/>
@@ -157,21 +110,13 @@
                                 <animate attributeName="r" values="220;240;220" dur="8s" repeatCount="indefinite"/>
                                 <animate attributeName="opacity" values="0.2;0.05;0.2" dur="8s" repeatCount="indefinite"/>
                             </circle>
-                            
-                            <!-- Gradients -->
+                
+                          
                             <defs>
                                 <linearGradient id="blue_glow" x1="0%" y1="0%" x2="100%" y2="100%">
                                     <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.8"/>
                                     <stop offset="50%" stop-color="#6366F1" stop-opacity="0.5"/>
                                     <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.8"/>
-                                </linearGradient>
-                                <linearGradient id="circle_gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#3B82F6"/>
-                                    <stop offset="100%" stop-color="#8B5CF6"/>
-                                </linearGradient>
-                                <linearGradient id="cloud_gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.8"/>
-                                    <stop offset="100%" stop-color="#93C5FD" stop-opacity="0.6"/>
                                 </linearGradient>
                                 <linearGradient id="pulse1" x1="0%" y1="0%" x2="100%" y2="100%">
                                     <stop offset="0%" stop-color="#3B82F6"/>
