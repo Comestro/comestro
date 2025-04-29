@@ -13,7 +13,7 @@
         <div class="max-w-2xl mx-auto text-center mb-16">
             <span class="inline-block py-1 px-3 rounded-full bg-[#0071bc]/10 text-[#0071bc] text-sm font-medium tracking-wider mb-4">TESTIMONIALS</span>
             <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                What Our Clients <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0071bc] to-[#f15a24]">Say About Us</span>
+                 Our Clients <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0071bc] to-[#f15a24]">Say About Us</span>
             </h2>
             <p class="text-lg text-gray-600">
                 Discover how we've helped businesses transform their digital presence and achieve remarkable results.

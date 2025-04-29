@@ -11,7 +11,7 @@
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
        
-
+<script src="//code.tidio.co/mrmbmspzf0fuv3by7bptn9g5bomtxgis.js" async></script>
 
         <meta name="description" content="Comestro is a leading software company in Purnea, Bihar, specializing in app development, website design, software solutions, and offering professional coding and programming classes.">
     <meta name="keywords" content="Comestro, software company Purnea, app development Bihar, web development services, software solutions, coding classes Purnea, programming institute Bihar, learn app and web development, software training center, technology education in Purnea">
@@ -39,7 +39,7 @@
       "@type": "Organization",
       "name": "Comestro",
       "url": "https://comestro.com/",
-      "logo": "https://www.comestro.com/assets/home/comestro.png",
+      "logo": "https://www.comestro.com/assets/home/logo c.jpg",
     
       "contactPoint": {
         "@type": "ContactPoint",
