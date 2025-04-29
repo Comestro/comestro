@@ -272,7 +272,7 @@
         </script>
     </div>
 
-    <!-- Original Content Section (Unchanged, with Background) -->
+  
     <div class="bg-gray-100 font-sans text-black">
         <div class="relative z-10 min-h-screen">
             <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl px-4 z-20">
