@@ -126,7 +126,7 @@
                 <div class="md:w-1/3 flex justify-center md:justify-end">
                     <div class="experience-counter flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full w-32 h-32 sm:w-36 sm:h-36 border border-white/20">
                         <div class="text-center">
-                            <span class="text-4xl sm:text-5xl font-bold text-white block">10+</span>
+                            <span class="text-4xl sm:text-5xl font-bold text-white block">15+</span>
                             <span class="text-white/80 text-sm">Years Experience</span>
                         </div>
                     </div>

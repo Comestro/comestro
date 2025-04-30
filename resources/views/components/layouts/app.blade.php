@@ -5,13 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>{{ $title ?? 'Comestro' }}</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com" defer></script>
         <meta name="google-site-verification" content="DkleUeBS1mAeoEHSPAJVMjLUTh4FhN7kmNnw4csflyY" />
-        <link rel="shortcut icon" href="{{ asset('home/logo c.jpg') }}">
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-       
-<script src="//code.tidio.co/mrmbmspzf0fuv3by7bptn9g5bomtxgis.js" async></script>
+        <link rel="shortcut icon" href="{{ asset('home/logo-c.jpg') }}">
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+        <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+        <script src="https://code.tidio.co/mrmbmspzf0fuv3by7bptn9g5bomtxgis.js" defer></script>
 
         <meta name="description" content="Comestro is a leading software company in Purnea, Bihar, specializing in app development, website design, software solutions, and offering professional coding and programming classes.">
     <meta name="keywords" content="Comestro, software company Purnea, app development Bihar, web development services, software solutions, coding classes Purnea, programming institute Bihar, learn app and web development, software training center, technology education in Purnea">
@@ -39,7 +38,7 @@
       "@type": "Organization",
       "name": "Comestro",
       "url": "https://comestro.com/",
-      "logo": "https://www.comestro.com/assets/home/logo c.jpg",
+      "logo": "https://www.comestro.com/assets/home/logo-c.jpg",
     
       "contactPoint": {
         "@type": "ContactPoint",
@@ -63,8 +62,6 @@
       ]
     }
     </script>
-
-    <link rel="shortcut icon" href="{{ asset('home/com.png') }}">
 
         <style>
             body, html {
@@ -99,6 +96,7 @@
                 z-index: 1;
             }
         </style>
+        @livewireStyles
         @stack('styles')
 
     </head>
@@ -106,6 +104,17 @@
         <x-header/>
         {{ $slot }}
         <x-footer/>
+        @livewireScripts
         @stack('scripts')
+        <script defer>
+          document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('img').forEach(img => {
+              img.onerror = () => {
+                img.onerror = null;
+                img.src = 'https://cdn.worldvectorlogo.com/logos/placeholder-1.svg';
+              };
+            });
+          });
+        </script>
     </body>
 </html>
