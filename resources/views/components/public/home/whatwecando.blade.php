@@ -145,7 +145,7 @@
 
         <!-- CTA button with brand colors -->
         <div class="mt-16 text-center">
-            <a href="#" class="inline-flex items-center justify-center px-8 py-4 border border-transparent rounded-lg text-base font-medium text-white bg-[#1d7dbc] hover:bg-[#f25b24] transition-all duration-500 shadow-md hover:shadow-lg">
+            <a href="{{route('service')}}" class="inline-flex items-center justify-center px-8 py-4 border border-transparent rounded-lg text-base font-medium text-white bg-[#1d7dbc] hover:bg-[#f25b24] transition-all duration-500 shadow-md hover:shadow-lg">
                 Explore Our Services
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transition-transform duration-300 transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
