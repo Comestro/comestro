@@ -1,4 +1,4 @@
-<section id="what-we-do" class="py-16 md:py-24 bg-gray-50">
+{{-- <section id="what-we-do" class="py-16 md:py-24 bg-gray-50">
     <div class="container mx-auto px-4">
         <!-- Section header with professional HR -->
         <div class="max-w-3xl mx-auto text-center mb-16">
@@ -153,4 +153,4 @@
             </a>
         </div>
     </div>
-</section>
+</section> --}}
