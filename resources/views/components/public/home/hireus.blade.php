@@ -10,7 +10,7 @@
         </div>
 
         <!-- Benefits Bar -->
-        <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 mb-12">
+        {{-- <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 mb-12">
             <div class="flex items-center text-sm font-medium text-gray-700 dark:text-gray-300">
                 <svg class="w-5 h-5 mr-2 text-[#1d7dbc]" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -35,9 +35,9 @@
                 </svg>
                 Post-Delivery Support
             </div>
-        </div>
+        </div> --}}
 
-        <!-- Hiring Models Cards -->
+        {{-- <!-- Hiring Models Cards -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <!-- Fixed Price Model -->
             <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:scale-105 border-t-4 border-[#1d7dbc]">
@@ -102,9 +102,9 @@
                     <span class="inline-block bg-orange-50 dark:bg-orange-900 text-orange-700 dark:text-orange-300 text-xs px-3 py-1 rounded-full">Budget-friendly</span>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
-        <!-- How It Works -->
+        {{-- <!-- How It Works -->
         <div class="mb-16">
             <h3 class="text-2xl font-bold text-center mb-8 text-gray-900 dark:text-white">How It Works</h3>
             <div class="flex flex-col md:flex-row justify-between items-center max-w-4xl mx-auto">
@@ -157,10 +157,10 @@
                     <p class="text-gray-600 dark:text-gray-400 text-center">Begin development</p>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <!-- CTA -->
-        <div class="text-center">
+        {{-- <div class="text-center">
             <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Ready to hire your expert team?</h3>
             <p class="text-lg text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
                 Let's talk about your goals. We'll match the perfect solution for your project needs and budget.
@@ -206,11 +206,11 @@
                     Money-back Guarantee
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
-</div>
 
-<div class="hire-us-form-container py-16 bg-white dark:bg-gray-900">
+
+<div class="hire-us-form-container py-16 ">
     <div class="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <!-- Form Section (8 columns on large screens) -->
@@ -490,6 +490,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <!-- JavaScript for form validation and functionality -->
