@@ -117,7 +117,7 @@
         <div class="w-full md:w-2/3 text-center md:text-left">
             <h3 class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-white mb-3 sm:mb-4">Ready to leverage our technical expertise?</h3>
             <p class="text-white/90 text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 max-w-xl mx-auto md:mx-0">Our team of skilled developers stays ahead of technological advancements to deliver modern, scalable solutions for your business.</p>
-            <a href="#contact" class="inline-flex items-center bg-white text-[#1d7dbc] font-semibold py-2 sm:py-2.5 lg:py-3 px-4 sm:px-5 lg:px-6 rounded-lg hover:shadow-lg transition-all duration-300 text-sm sm:text-base">
+            <a href="{{route('contact')}}" class="inline-flex items-center bg-white text-[#1d7dbc] font-semibold py-2 sm:py-2.5 lg:py-3 px-4 sm:px-5 lg:px-6 rounded-lg hover:shadow-lg transition-all duration-300 text-sm sm:text-base">
                 Discuss Your Project
                 <svg class="w-4 h-4 sm:w-5 sm:h-5 ml-1 sm:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
