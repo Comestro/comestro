@@ -111,248 +111,146 @@
         </div>
 
         <!-- Tech Experience Banner -->
-        <div class="tech-experience mt-16 bg-gradient-to-r from-[#1d7dbc] to-[#f25b24] rounded-2xl p-6 md:p-10 shadow-xl relative overflow-hidden">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-8 relative z-10">
-                <div class="md:w-2/3">
-                    <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Ready to leverage our technical expertise?</h3>
-                    <p class="text-white/90 mb-6">Our team of skilled developers stays ahead of technological advancements to deliver modern, scalable solutions for your business.</p>
-                    <a href="#contact" class="inline-flex items-center bg-white text-[#1d7dbc] font-semibold py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300">
-                        Discuss Your Project
-                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg>
-                    </a>
-                </div>
-                <div class="md:w-1/3 flex justify-center md:justify-end">
-                    <div class="experience-counter flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full w-32 h-32 sm:w-36 sm:h-36 border border-white/20">
-                        <div class="text-center">
-                            <span class="text-4xl sm:text-5xl font-bold text-white block">15+</span>
-                            <span class="text-white/80 text-sm">Years Experience</span>
-                        </div>
-                    </div>
+       <!-- Replace the existing tech-experience div with this -->
+<div class="tech-experience mt-12 sm:mt-16 bg-gradient-to-r from-[#1d7dbc] to-[#f25b24] rounded-2xl p-4 sm:p-6 lg:p-8 xl:p-10 shadow-xl relative overflow-hidden">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6 sm:gap-8 lg:gap-10 relative z-10">
+        <div class="w-full md:w-2/3 text-center md:text-left">
+            <h3 class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-white mb-3 sm:mb-4">Ready to leverage our technical expertise?</h3>
+            <p class="text-white/90 text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 max-w-xl mx-auto md:mx-0">Our team of skilled developers stays ahead of technological advancements to deliver modern, scalable solutions for your business.</p>
+            <a href="#contact" class="inline-flex items-center bg-white text-[#1d7dbc] font-semibold py-2 sm:py-2.5 lg:py-3 px-4 sm:px-5 lg:px-6 rounded-lg hover:shadow-lg transition-all duration-300 text-sm sm:text-base">
+                Discuss Your Project
+                <svg class="w-4 h-4 sm:w-5 sm:h-5 ml-1 sm:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="w-full md:w-1/3 flex justify-center md:justify-end">
+            <div class="experience-counter flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 border border-white/20">
+                <div class="text-center">
+                    <span class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white block">15+</span>
+                    <span class="text-white/80 text-xs sm:text-sm">Years Experience</span>
                 </div>
             </div>
-            <!-- Abstract background shapes -->
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-            <div class="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
         </div>
+    </div>
+    <!-- Abstract background shapes -->
+    <div class="absolute top-0 right-0 w-1/3 h-1/3 max-w-48 max-h-48 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+    <div class="absolute bottom-0 left-0 w-2/5 h-2/5 max-w-60 max-h-60 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+</div>
     </div>
 </section>
 
 @push('styles')
 <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 <style>
-    /* Basic card styling with improved transitions */
-    .tech-card {
-        position: relative;
-        overflow: visible;
-        transform: translateY(0);
-        will-change: transform, box-shadow;
-        cursor: pointer;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Responsive Tech Experience Section */
+.tech-experience {
+    padding: clamp(1rem, 4vw, 2.5rem); /* Scales padding dynamically */
+}
+
+/* Text content */
+.tech-experience h3 {
+    font-size: clamp(1.25rem, 3vw + 0.5rem, 2.25rem); /* Responsive font size */
+    line-height: 1.2;
+}
+
+.tech-experience p {
+    font-size: clamp(0.875rem, 2vw + 0.25rem, 1.125rem);
+    line-height: 1.5;
+}
+
+/* Button */
+.tech-experience a {
+    padding: clamp(0.5rem, 1.5vw, 0.75rem) clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+}
+
+/* Experience counter */
+.experience-counter {
+    width: clamp(6rem, 20vw, 9rem);
+    height: clamp(6rem, 20vw, 9rem);
+}
+
+.experience-counter span:first-child {
+    font-size: clamp(2rem, 5vw, 3.125rem);
+}
+
+.experience-counter span:last-child {
+    font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+}
+
+/* Background shapes */
+.tech-experience > div:nth-child(2) {
+    width: clamp(8rem, 25vw, 12rem);
+    height: clamp(8rem, 25vw, 12rem);
+}
+
+.tech-experience > div:nth-child(3) {
+    width: clamp(10rem, 30vw, 15rem);
+    height: clamp(10rem, 30vw, 15rem);
+}
+
+/* Optimize animation for performance */
+.experience-counter::before {
+    animation: rotate 8s linear infinite; /* Slower rotation for less CPU usage */
+    will-change: transform;
+}
+
+/* Media queries for fine-tuning */
+@media (max-width: 640px) {
+    .tech-experience {
+        padding: 1rem;
+        margin-top: 2.5rem;
     }
 
-    .tech-card:hover {
-        transform: translateY(-5px) scale(1.02);
-        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    .tech-experience .flex {
+        gap: 1.5rem;
     }
 
-    .tech-card:active {
-        transform: translateY(-2px) scale(0.98);
+    .tech-experience h3 {
+        text-align: center;
     }
 
-    /* Gradient border effect */
-    .tech-card::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        z-index: -1;
-        background: linear-gradient(to bottom right, #1d7dbc, #f25b24);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        border-radius: inherit;
-        margin: -2px;
+    .tech-experience p {
+        text-align: center;
+        max-width: 100%;
     }
 
-    .tech-card:hover::before {
-        opacity: 0.5;
+    .tech-experience a {
+        margin: 0 auto;
+        display: block;
+        width: fit-content;
     }
 
-    /* Swiper navigation styling */
-    .swiper-button-prev,
-    .swiper-button-next {
-        width: 40px !important;
-        height: 40px !important;
-        opacity: 0.9;
-        color: white !important;
-    }
-
-    .swiper-button-prev:after,
-    .swiper-button-next:after {
-        font-size: 16px !important;
-        font-weight: bold;
-    }
-
-    .swiper-button-prev:hover,
-    .swiper-button-next:hover {
-        opacity: 1;
-    }
-
-    /* Filter button styling */
-    .filter-btn {
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        transition: all 0.3s ease;
-        white-space: nowrap;
-    }
-
-    .filter-btn:not(.active)::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 0;
-        background: linear-gradient(to right, #1d7dbc, #f25b24);
-        transition: height 0.3s ease;
-        opacity: 0.1;
-        z-index: -1;
-    }
-
-    .filter-btn:not(.active):hover::after {
-        height: 100%;
-    }
-
-    /* Active filter button */
-    .filter-btn.active {
-        position: relative;
-        z-index: 1;
-        transform: translateY(-1px);
-    }
-
-    /* Pagination styling */
-    .swiper-pagination {
-        position: relative;
-        bottom: 0 !important;
-        margin-top: 20px;
-    }
-
-    .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
-        opacity: 0.5;
-        transition: all 0.3s ease;
-    }
-
-    .swiper-pagination-bullet-active {
-        width: 20px;
-        border-radius: 5px;
-        opacity: 1;
-        background: linear-gradient(to right, #1d7dbc, #f25b24);
-    }
-
-    /* Mobile optimizations */
-    @media (max-width: 640px) {
-        .tech-card {
-            height: auto;
-            padding: 16px;
-        }
-
-        .tech-category {
-            font-size: 0.65rem;
-        }
-
-        .swiper-container {
-            padding: 10px 0 30px !important;
-            overflow: visible !important;
-        }
-
-        .filter-btn {
-            padding: 6px 12px !important;
-            font-size: 0.7rem !important;
-        }
-
-        .swiper-pagination {
-            bottom: -5px !important;
-        }
-
-        .category-filters {
-            gap: 6px !important;
-            padding-bottom: 5px;
-            overflow-x: auto;
-            flex-wrap: nowrap !important;
-            justify-content: flex-start !important;
-            padding: 5px 0;
-            -webkit-overflow-scrolling: touch;
-            scroll-snap-type: x mandatory;
-        }
-
-        .filter-btn {
-            flex: 0 0 auto;
-            scroll-snap-align: start;
-        }
-
-        .tech-stack-carousel {
-            margin: 0 -20px;
-            padding: 0 20px;
-        }
-
-        /* Fix modal for small screens */
-        #tech-info-modal>div {
-            max-width: 90% !important;
-            margin: 0 auto;
-        }
-    }
-
-    /* Experience counter animation */
     .experience-counter {
-        position: relative;
-        overflow: hidden;
+        width: clamp(5rem, 25vw, 7rem);
+        height: clamp(5rem, 25vw, 7rem);
+    }
+}
+
+@media (min-width: 1280px) {
+    .tech-experience {
+        padding: 2.5rem;
     }
 
-    .experience-counter::before {
-        content: '';
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 200%;
-        height: 200%;
-        background: conic-gradient(transparent, rgba(255, 255, 255, 0.3), transparent 30%);
-        animation: rotate 6s linear infinite;
+    .tech-experience .flex {
+        gap: 2.5rem;
     }
 
-    /* Better scroll touch for filters */
-    .category-filters::-webkit-scrollbar {
+    .experience-counter {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .tech-experience > div:nth-child(2),
+    .tech-experience > div:nth-child(3) {
         display: none;
     }
-
-    .category-filters {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-
-    /* Modal animation */
-    #tech-info-modal.show {
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    #tech-info-modal.show>div {
-        transform: scale(1);
-    }
-
-    /* Animation keyframes */
-    @keyframes rotate {
-        from {
-            transform: rotate(0deg);
-        }
-
-        to {
-            transform: rotate(360deg);
-        }
-    }
-</style>
+}
+    </style>
 @endpush
 
 @push('scripts')
